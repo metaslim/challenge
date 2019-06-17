@@ -15,12 +15,12 @@ var _ Loader = (*JSONLoader)(nil)
 
 //JSONLoader is struct that will implement Loader interface
 type JSONLoader struct {
-	fileName string
+	FileName string
 }
 
 //Load return valid filehandle
 func (jsonLoader JSONLoader) GetFileHandle() (*os.File, error) {
-	fileHandle, err := os.Open(jsonLoader.fileName)
+	fileHandle, err := os.Open(jsonLoader.FileName)
 
 	if err != nil {
 		return nil, err

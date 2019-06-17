@@ -8,11 +8,11 @@ import (
 
 //Model is an interface that require search to be implemented
 type Model interface {
-	New(loader.JSONLoader) error
+	Populate(loader.JSONLoader) error
 }
 
-//New return model
-func load(jsonLoader loader.JSONLoader, model Model) error {
+//load return single item
+func load(jsonLoader loader.JSONLoader, model interface{}) error {
 	fileHandle, err := jsonLoader.GetFileHandle()
 	defer fileHandle.Close()
 
@@ -27,7 +27,11 @@ func load(jsonLoader loader.JSONLoader, model Model) error {
 	}
 
 	parser := jsonLoader.Parse()
-	parser(byteValue, model)
+	err = parser(byteValue, model)
+
+	if err != nil {
+		return err
+	}
 
 	return nil
 }
