@@ -6,12 +6,23 @@ import (
 	"github.com/zendesk/challenge/lib/loader"
 )
 
-//Model is an interface that require search to be implemented
-type Model interface {
+//Records is an interface that require search to be implemented
+type Records interface {
 	Populate(loader.JSONLoader) error
+	Search(string, string) SearchResult
 }
 
-//load return single item
+type DecorateParams struct {
+	Organizations Organizations
+	Tickets       Tickets
+	Users         Users
+}
+
+type SearchResult interface {
+	Decorate(DecorateParams)
+}
+
+//load
 func load(jsonLoader loader.JSONLoader, model interface{}) error {
 	fileHandle, err := jsonLoader.GetFileHandle()
 	defer fileHandle.Close()

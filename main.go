@@ -1,44 +1,43 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
+	"os"
 
-	"github.com/zendesk/challenge/lib/loader"
-
+	"github.com/zendesk/challenge/lib/helper"
 	"github.com/zendesk/challenge/lib/model"
 )
 
 func main() {
-	org := model.Organizations{}
-	err := org.Populate(loader.JSONLoader{
-		FileName: "data/organizations.json",
-	})
-
+	organizations, err := helper.LoadOrganizations()
 	if err != nil {
-		fmt.Println(err)
+		os.Exit(1)
 	}
-	fmt.Println("org")
-	fmt.Println(org)
+	sr := organizations.Search("tags", "West")
 
-	users := model.Users{}
-	err = users.Populate(loader.JSONLoader{
-		FileName: "data/users.json",
-	})
-
+	users, err := helper.LoadUsers()
 	if err != nil {
-		fmt.Println(err)
+		os.Exit(1)
 	}
-	fmt.Println("users")
-	fmt.Println(users)
+	sr = users.Search("tags", "Southview")
 
-	tickets := model.Tickets{}
-	err = tickets.Populate(loader.JSONLoader{
-		FileName: "data/tickets.json",
-	})
-
+	tickets, err := helper.LoadTickets()
 	if err != nil {
-		fmt.Println(err)
+		os.Exit(1)
 	}
-	fmt.Println("tickets")
-	fmt.Println(tickets)
+	sr = tickets.Search("tags", "Idaho")
+
+	dp := model.DecorateParams{
+		Organizations: organizations,
+		Users:         users,
+		Tickets:       tickets,
+	}
+
+	b, err := json.MarshalIndent(sr, "", "  ")
+	fmt.Println(string(b))
+	sr.Decorate(dp)
+	b, err = json.MarshalIndent(sr, "", "  ")
+	fmt.Println(string(b))
+
 }
