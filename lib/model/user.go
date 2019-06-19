@@ -2,6 +2,7 @@ package model
 
 import (
 	"reflect"
+	"strconv"
 
 	"github.com/metaslim/challenge/lib/loader"
 	"github.com/metaslim/challenge/lib/schema"
@@ -17,6 +18,7 @@ type Users struct {
 
 type UserSearchResult struct {
 	Items []schema.User
+	BaseSearchResult
 }
 
 func (userSearchResult UserSearchResult) Decorate(decorateParams DecorateParams) {
@@ -60,14 +62,38 @@ func (users *Users) Search(searchKey string, searchTerm string) SearchResult {
 				if searchKey == "tags" {
 					for _, tag := range user.Tags {
 						if tag == searchTerm {
+							results.Size++
 							results.Items = append(results.Items, user)
 							break
 						}
 					}
-				} else if valueField.Interface() == searchTerm {
-					results.Items = append(results.Items, user)
-				}
+				} else {
+					var castedSearchTerm interface{}
+					var err error
+					switch searchKey {
+					case "_id":
+					case "organization_id":
+						castedSearchTerm, err = strconv.Atoi(searchTerm)
+						if err != nil {
+							break
+						}
+					case "active":
+					case "verified":
+					case "shared":
+					case "suspended":
+						castedSearchTerm, err = strconv.ParseBool(searchTerm)
+						if err != nil {
+							break
+						}
+					default:
+						castedSearchTerm = searchTerm
 
+					}
+					if valueField.Interface() == castedSearchTerm {
+						results.Size++
+						results.Items = append(results.Items, user)
+					}
+				}
 				break
 			}
 		}

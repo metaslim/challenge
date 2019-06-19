@@ -2,6 +2,7 @@ package model
 
 import (
 	"reflect"
+	"strconv"
 
 	"github.com/metaslim/challenge/lib/loader"
 	"github.com/metaslim/challenge/lib/schema"
@@ -17,6 +18,7 @@ type Organizations struct {
 
 type OrganizationSearchResult struct {
 	Items []schema.Organization
+	BaseSearchResult
 }
 
 func (organizationsSearchResult OrganizationSearchResult) Decorate(decorateParams DecorateParams) {
@@ -54,6 +56,7 @@ func (organizations *Organizations) Search(searchKey string, searchTerm string) 
 				if searchKey == "domain_names" {
 					for _, domainName := range organization.DomainNames {
 						if domainName == searchTerm {
+							results.Size++
 							results.Items = append(results.Items, organization)
 							break
 						}
@@ -61,12 +64,33 @@ func (organizations *Organizations) Search(searchKey string, searchTerm string) 
 				} else if searchKey == "tags" {
 					for _, tag := range organization.Tags {
 						if tag == searchTerm {
+							results.Size++
 							results.Items = append(results.Items, organization)
 							break
 						}
 					}
-				} else if valueField.Interface() == searchTerm {
-					results.Items = append(results.Items, organization)
+				} else {
+					var castedSearchTerm interface{}
+					var err error
+					switch searchKey {
+					case "_id":
+						castedSearchTerm, err = strconv.Atoi(searchTerm)
+						if err != nil {
+							break
+						}
+					case "shared_tickets":
+						castedSearchTerm, err = strconv.ParseBool(searchTerm)
+						if err != nil {
+							break
+						}
+					default:
+						castedSearchTerm = searchTerm
+
+					}
+					if valueField.Interface() == castedSearchTerm {
+						results.Size++
+						results.Items = append(results.Items, organization)
+					}
 				}
 				break
 			}

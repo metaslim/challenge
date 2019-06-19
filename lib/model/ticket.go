@@ -2,6 +2,7 @@ package model
 
 import (
 	"reflect"
+	"strconv"
 
 	"github.com/metaslim/challenge/lib/loader"
 	"github.com/metaslim/challenge/lib/schema"
@@ -17,6 +18,7 @@ type Tickets struct {
 
 type TicketSearchResult struct {
 	Items []schema.Ticket
+	BaseSearchResult
 }
 
 func (ticketSearchResult TicketSearchResult) Decorate(decorateParams DecorateParams) {
@@ -61,14 +63,36 @@ func (tickets *Tickets) Search(searchKey string, searchTerm string) SearchResult
 				if searchKey == "tags" {
 					for _, tag := range ticket.Tags {
 						if tag == searchTerm {
+							results.Size++
 							results.Items = append(results.Items, ticket)
 							break
 						}
 					}
-				} else if valueField.Interface() == searchTerm {
-					results.Items = append(results.Items, ticket)
-				}
+				} else {
+					var castedSearchTerm interface{}
+					var err error
+					switch searchKey {
+					case "assignee_id":
+					case "submitter_id":
+					case "organization_id":
+						castedSearchTerm, err = strconv.Atoi(searchTerm)
+						if err != nil {
+							break
+						}
+					case "has_incidents":
+						castedSearchTerm, err = strconv.ParseBool(searchTerm)
+						if err != nil {
+							break
+						}
+					default:
+						castedSearchTerm = searchTerm
 
+					}
+					if valueField.Interface() == castedSearchTerm {
+						results.Size++
+						results.Items = append(results.Items, ticket)
+					}
+				}
 				break
 			}
 		}

@@ -20,6 +20,15 @@ type DecorateParams struct {
 
 type SearchResult interface {
 	Decorate(DecorateParams)
+	GetSize() int
+}
+
+type BaseSearchResult struct {
+	Size int `json:"number_of_result,omitempty"`
+}
+
+func (baseSearchResult BaseSearchResult) GetSize() int {
+	return baseSearchResult.Size
 }
 
 //load
