@@ -3,7 +3,7 @@ package model
 import (
 	"io/ioutil"
 
-	"github.com/zendesk/challenge/lib/loader"
+	"github.com/metaslim/challenge/lib/loader"
 )
 
 //Records is an interface that require search to be implemented

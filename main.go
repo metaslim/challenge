@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/zendesk/challenge/lib/helper"
-	"github.com/zendesk/challenge/lib/model"
+	"github.com/metaslim/challenge/lib/helper"
+	"github.com/metaslim/challenge/lib/model"
 )
 
 func main() {

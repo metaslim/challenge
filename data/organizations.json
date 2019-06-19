@@ -1,7 +1,7 @@
 [
   {
     "_id": 101,
-    "url": "http://initech.zendesk.com/api/v2/organizations/101.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/101.json",
     "external_id": "9270ed79-35eb-4a38-a46f-35725197ea8d",
     "name": "Enthaze",
     "domain_names": [
@@ -22,7 +22,7 @@
   },
   {
     "_id": 102,
-    "url": "http://initech.zendesk.com/api/v2/organizations/102.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/102.json",
     "external_id": "7cd6b8d4-2999-4ff2-8cfd-44d05b449226",
     "name": "Nutralab",
     "domain_names": [
@@ -43,7 +43,7 @@
   },
   {
     "_id": 103,
-    "url": "http://initech.zendesk.com/api/v2/organizations/103.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/103.json",
     "external_id": "e73240f3-8ecf-411d-ad0d-80ca8a84053d",
     "name": "Plasmos",
     "domain_names": [
@@ -64,7 +64,7 @@
   },
   {
     "_id": 104,
-    "url": "http://initech.zendesk.com/api/v2/organizations/104.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/104.json",
     "external_id": "f6eb60ad-fe37-4a45-9689-b32031399f93",
     "name": "Xylar",
     "domain_names": [
@@ -85,7 +85,7 @@
   },
   {
     "_id": 105,
-    "url": "http://initech.zendesk.com/api/v2/organizations/105.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/105.json",
     "external_id": "52f12203-6112-4fb9-aadc-70a6c816d605",
     "name": "Koffee",
     "domain_names": [
@@ -106,7 +106,7 @@
   },
   {
     "_id": 106,
-    "url": "http://initech.zendesk.com/api/v2/organizations/106.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/106.json",
     "external_id": "2355f080-b37c-44f3-977e-53c341fde146",
     "name": "Qualitern",
     "domain_names": [
@@ -127,7 +127,7 @@
   },
   {
     "_id": 107,
-    "url": "http://initech.zendesk.com/api/v2/organizations/107.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/107.json",
     "external_id": "773cc8fd-12e6-4f0b-9709-a370d98ee2e0",
     "name": "Sulfax",
     "domain_names": [
@@ -148,7 +148,7 @@
   },
   {
     "_id": 108,
-    "url": "http://initech.zendesk.com/api/v2/organizations/108.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/108.json",
     "external_id": "be72663b-338d-42f4-bd52-cf6584cad674",
     "name": "Zolarex",
     "domain_names": [
@@ -169,7 +169,7 @@
   },
   {
     "_id": 109,
-    "url": "http://initech.zendesk.com/api/v2/organizations/109.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/109.json",
     "external_id": "5f930931-37fd-41a2-9c68-1cd5b99e7a3e",
     "name": "Möreganic",
     "domain_names": [
@@ -190,7 +190,7 @@
   },
   {
     "_id": 110,
-    "url": "http://initech.zendesk.com/api/v2/organizations/110.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/110.json",
     "external_id": "197f93c0-1729-4c82-9bb0-143e978f06ce",
     "name": "Kindaloo",
     "domain_names": [
@@ -211,7 +211,7 @@
   },
   {
     "_id": 111,
-    "url": "http://initech.zendesk.com/api/v2/organizations/111.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/111.json",
     "external_id": "852e22ab-76dc-4d92-9a1d-02d3e04349cb",
     "name": "Speedbolt",
     "domain_names": [
@@ -232,7 +232,7 @@
   },
   {
     "_id": 112,
-    "url": "http://initech.zendesk.com/api/v2/organizations/112.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/112.json",
     "external_id": "32e979ff-47b4-43b9-8b74-eea1227905d9",
     "name": "Quilk",
     "domain_names": [
@@ -253,7 +253,7 @@
   },
   {
     "_id": 113,
-    "url": "http://initech.zendesk.com/api/v2/organizations/113.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/113.json",
     "external_id": "67d9dbdb-a9c6-4a30-a003-202de05d09e2",
     "name": "Noralex",
     "domain_names": [
@@ -274,7 +274,7 @@
   },
   {
     "_id": 114,
-    "url": "http://initech.zendesk.com/api/v2/organizations/114.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/114.json",
     "external_id": "49c97d6a-f1ec-422e-aabe-8a429e81e656",
     "name": "Isotronic",
     "domain_names": [
@@ -295,7 +295,7 @@
   },
   {
     "_id": 115,
-    "url": "http://initech.zendesk.com/api/v2/organizations/115.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/115.json",
     "external_id": "71010066-113a-48b5-8498-184ae2c72f93",
     "name": "Netur",
     "domain_names": [
@@ -316,7 +316,7 @@
   },
   {
     "_id": 116,
-    "url": "http://initech.zendesk.com/api/v2/organizations/116.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/116.json",
     "external_id": "dbc692fc-e1ae-47d8-a1d7-263d07710fe1",
     "name": "Zentry",
     "domain_names": [
@@ -337,7 +337,7 @@
   },
   {
     "_id": 117,
-    "url": "http://initech.zendesk.com/api/v2/organizations/117.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/117.json",
     "external_id": "bf9b5a96-9b10-45ff-b638-a374a521dead",
     "name": "Comtext",
     "domain_names": [
@@ -358,7 +358,7 @@
   },
   {
     "_id": 118,
-    "url": "http://initech.zendesk.com/api/v2/organizations/118.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/118.json",
     "external_id": "6970300e-f211-4c01-a538-70b4464a1d84",
     "name": "Limozen",
     "domain_names": [
@@ -379,7 +379,7 @@
   },
   {
     "_id": 119,
-    "url": "http://initech.zendesk.com/api/v2/organizations/119.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/119.json",
     "external_id": "2386db7c-5056-49c9-8dc4-46775e464cb7",
     "name": "Multron",
     "domain_names": [
@@ -400,7 +400,7 @@
   },
   {
     "_id": 120,
-    "url": "http://initech.zendesk.com/api/v2/organizations/120.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/120.json",
     "external_id": "82da5daf-d6ad-484d-a831-05cd3e2baea5",
     "name": "Andershun",
     "domain_names": [
@@ -421,7 +421,7 @@
   },
   {
     "_id": 121,
-    "url": "http://initech.zendesk.com/api/v2/organizations/121.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/121.json",
     "external_id": "3fffbf20-9172-4d1d-923b-f247d9132e3a",
     "name": "Hotcâkes",
     "domain_names": [
@@ -442,7 +442,7 @@
   },
   {
     "_id": 122,
-    "url": "http://initech.zendesk.com/api/v2/organizations/122.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/122.json",
     "external_id": "33c4e38d-bfa3-4b12-9bb6-6f547524cf33",
     "name": "Geekfarm",
     "domain_names": [
@@ -463,7 +463,7 @@
   },
   {
     "_id": 123,
-    "url": "http://initech.zendesk.com/api/v2/organizations/123.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/123.json",
     "external_id": "12831719-9173-47c7-8834-fa5b26877393",
     "name": "Terrasys",
     "domain_names": [
@@ -484,7 +484,7 @@
   },
   {
     "_id": 124,
-    "url": "http://initech.zendesk.com/api/v2/organizations/124.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/124.json",
     "external_id": "15c21605-cbc6-440f-8da2-6e1601aed5fa",
     "name": "Bitrex",
     "domain_names": [
@@ -505,7 +505,7 @@
   },
   {
     "_id": 125,
-    "url": "http://initech.zendesk.com/api/v2/organizations/125.json",
+    "url": "http://initech.metaslim.com/api/v2/organizations/125.json",
     "external_id": "42a1a845-70cf-40ed-a762-acb27fd606cc",
     "name": "Strezzö",
     "domain_names": [

@@ -1,8 +1,8 @@
 package helper
 
 import (
-	"github.com/zendesk/challenge/lib/loader"
-	"github.com/zendesk/challenge/lib/model"
+	"github.com/metaslim/challenge/lib/loader"
+	"github.com/metaslim/challenge/lib/model"
 )
 
 func LoadOrganizations() (model.Organizations, error) {

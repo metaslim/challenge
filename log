@@ -2,7 +2,7 @@
   "Items": [
     {
       "_id": "1a227508-9f39-427c-8f57-1b72f3fab87c",
-      "url": "http://initech.zendesk.com/api/v2/tickets/1a227508-9f39-427c-8f57-1b72f3fab87c.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/1a227508-9f39-427c-8f57-1b72f3fab87c.json",
       "external_id": "3e5ca820-cd1f-4a02-a18f-11b18e7bb49a",
       "created_at": "2016-04-14T08:32:31 -10:00",
       "type": "incident",
@@ -25,7 +25,7 @@
     },
     {
       "_id": "4e85e18c-797a-4d28-8e92-750447d3b4f5",
-      "url": "http://initech.zendesk.com/api/v2/tickets/4e85e18c-797a-4d28-8e92-750447d3b4f5.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/4e85e18c-797a-4d28-8e92-750447d3b4f5.json",
       "external_id": "4ef45a7a-81ce-422f-bc38-59a79baa5591",
       "created_at": "2016-02-04T07:50:34 -11:00",
       "type": "task",
@@ -48,7 +48,7 @@
     },
     {
       "_id": "25d9edca-7756-4d28-8fdd-f16f1532f6ab",
-      "url": "http://initech.zendesk.com/api/v2/tickets/25d9edca-7756-4d28-8fdd-f16f1532f6ab.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/25d9edca-7756-4d28-8fdd-f16f1532f6ab.json",
       "external_id": "c6782106-7623-4952-b4b1-8663f7b5e9dc",
       "created_at": "2016-03-01T05:58:09 -11:00",
       "type": "task",
@@ -71,7 +71,7 @@
     },
     {
       "_id": "25cb699f-a5dd-45d8-9bc1-9c4b7d096946",
-      "url": "http://initech.zendesk.com/api/v2/tickets/25cb699f-a5dd-45d8-9bc1-9c4b7d096946.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/25cb699f-a5dd-45d8-9bc1-9c4b7d096946.json",
       "external_id": "e85c7f58-59ed-4e05-9734-eb2a3aa92fa8",
       "created_at": "2016-04-03T04:05:26 -10:00",
       "type": "problem",
@@ -94,7 +94,7 @@
     },
     {
       "_id": "6d6dbb5b-2b74-46a9-8e0a-8d8140f63412",
-      "url": "http://initech.zendesk.com/api/v2/tickets/6d6dbb5b-2b74-46a9-8e0a-8d8140f63412.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/6d6dbb5b-2b74-46a9-8e0a-8d8140f63412.json",
       "external_id": "1ef988d9-65b9-4f59-9930-844c97603b0f",
       "created_at": "2016-07-27T01:43:49 -10:00",
       "type": "task",
@@ -117,7 +117,7 @@
     },
     {
       "_id": "3ff0599a-fe0f-4f8f-ac31-e2636843bcea",
-      "url": "http://initech.zendesk.com/api/v2/tickets/3ff0599a-fe0f-4f8f-ac31-e2636843bcea.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/3ff0599a-fe0f-4f8f-ac31-e2636843bcea.json",
       "external_id": "dfc05543-cdf7-4165-8aab-f3a74b29b544",
       "created_at": "2016-05-15T12:59:16 -10:00",
       "type": "question",
@@ -140,7 +140,7 @@
     },
     {
       "_id": "27ab7105-e852-42f3-91a3-2d77c7a0c3fc",
-      "url": "http://initech.zendesk.com/api/v2/tickets/27ab7105-e852-42f3-91a3-2d77c7a0c3fc.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/27ab7105-e852-42f3-91a3-2d77c7a0c3fc.json",
       "external_id": "74e795dd-fb0d-48aa-9c83-f90016ca8243",
       "created_at": "2016-02-27T03:26:47 -11:00",
       "type": "task",
@@ -163,7 +163,7 @@
     },
     {
       "_id": "c71606b7-42f1-4390-8549-dfd87707969b",
-      "url": "http://initech.zendesk.com/api/v2/tickets/c71606b7-42f1-4390-8549-dfd87707969b.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/c71606b7-42f1-4390-8549-dfd87707969b.json",
       "external_id": "197a6890-e523-4cdf-bb63-1701b58364ea",
       "created_at": "2016-06-23T05:02:27 -10:00",
       "type": "question",
@@ -186,7 +186,7 @@
     },
     {
       "_id": "6fed7d01-15dd-4b59-94f9-1093b4bc0995",
-      "url": "http://initech.zendesk.com/api/v2/tickets/6fed7d01-15dd-4b59-94f9-1093b4bc0995.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/6fed7d01-15dd-4b59-94f9-1093b4bc0995.json",
       "external_id": "cdb3576c-8d42-40e4-8f3f-6c1ea89f7766",
       "created_at": "2016-06-03T06:03:33 -10:00",
       "type": "task",
@@ -209,7 +209,7 @@
     },
     {
       "_id": "018ed12d-86bb-4379-a679-1184264ac5a2",
-      "url": "http://initech.zendesk.com/api/v2/tickets/018ed12d-86bb-4379-a679-1184264ac5a2.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/018ed12d-86bb-4379-a679-1184264ac5a2.json",
       "external_id": "eaa893e6-aaa5-41ca-b64a-2345a4d9ff4d",
       "created_at": "2016-05-17T08:27:45 -10:00",
       "type": "problem",
@@ -232,7 +232,7 @@
     },
     {
       "_id": "189eed9f-b44c-49f3-a904-2c482193996a",
-      "url": "http://initech.zendesk.com/api/v2/tickets/189eed9f-b44c-49f3-a904-2c482193996a.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/189eed9f-b44c-49f3-a904-2c482193996a.json",
       "external_id": "d8df91ac-382f-44ff-a3f2-196d06413864",
       "created_at": "2016-07-05T07:08:28 -10:00",
       "type": "task",
@@ -255,7 +255,7 @@
     },
     {
       "_id": "945ce2d3-3edc-4936-8d51-e59e74cf917a",
-      "url": "http://initech.zendesk.com/api/v2/tickets/945ce2d3-3edc-4936-8d51-e59e74cf917a.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/945ce2d3-3edc-4936-8d51-e59e74cf917a.json",
       "external_id": "5c741d66-cdd4-4d20-bb95-a3948217bf2c",
       "created_at": "2016-04-23T05:47:03 -10:00",
       "type": "task",
@@ -278,7 +278,7 @@
     },
     {
       "_id": "7a0b41db-f910-4814-8d75-1e0915ec5d27",
-      "url": "http://initech.zendesk.com/api/v2/tickets/7a0b41db-f910-4814-8d75-1e0915ec5d27.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/7a0b41db-f910-4814-8d75-1e0915ec5d27.json",
       "external_id": "51a0fa14-fd84-473f-92b0-62f58da25241",
       "created_at": "2016-03-15T07:32:22 -11:00",
       "type": "question",
@@ -301,7 +301,7 @@
     },
     {
       "_id": "a7b16a5c-76d9-4e60-aadc-33653b828173",
-      "url": "http://initech.zendesk.com/api/v2/tickets/a7b16a5c-76d9-4e60-aadc-33653b828173.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/a7b16a5c-76d9-4e60-aadc-33653b828173.json",
       "external_id": "c330acd5-26e0-4e99-b946-48b741225828",
       "created_at": "2016-04-10T03:31:51 -10:00",
       "type": "incident",
@@ -328,7 +328,7 @@
   "Items": [
     {
       "_id": "1a227508-9f39-427c-8f57-1b72f3fab87c",
-      "url": "http://initech.zendesk.com/api/v2/tickets/1a227508-9f39-427c-8f57-1b72f3fab87c.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/1a227508-9f39-427c-8f57-1b72f3fab87c.json",
       "external_id": "3e5ca820-cd1f-4a02-a18f-11b18e7bb49a",
       "created_at": "2016-04-14T08:32:31 -10:00",
       "type": "incident",
@@ -350,7 +350,7 @@
       "via": "chat",
       "submitter": {
         "_id": 71,
-        "url": "http://initech.zendesk.com/api/v2/users/71.json",
+        "url": "http://initech.metaslim.com/api/v2/users/71.json",
         "external_id": "c972bb41-94aa-4f20-bc93-e63dbfe8d9ca",
         "name": "Prince Hinton",
         "alias": "Miss Dana",
@@ -376,7 +376,7 @@
       },
       "assignee": {
         "_id": 38,
-        "url": "http://initech.zendesk.com/api/v2/users/38.json",
+        "url": "http://initech.metaslim.com/api/v2/users/38.json",
         "external_id": "72c7ba23-e070-4583-b701-04a038a28b02",
         "name": "Elma Castro",
         "alias": "Mr Georgette",
@@ -402,7 +402,7 @@
       },
       "organization": {
         "_id": 112,
-        "url": "http://initech.zendesk.com/api/v2/organizations/112.json",
+        "url": "http://initech.metaslim.com/api/v2/organizations/112.json",
         "external_id": "32e979ff-47b4-43b9-8b74-eea1227905d9",
         "name": "Quilk",
         "domain_names": [
@@ -424,7 +424,7 @@
     },
     {
       "_id": "4e85e18c-797a-4d28-8e92-750447d3b4f5",
-      "url": "http://initech.zendesk.com/api/v2/tickets/4e85e18c-797a-4d28-8e92-750447d3b4f5.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/4e85e18c-797a-4d28-8e92-750447d3b4f5.json",
       "external_id": "4ef45a7a-81ce-422f-bc38-59a79baa5591",
       "created_at": "2016-02-04T07:50:34 -11:00",
       "type": "task",
@@ -446,7 +446,7 @@
       "via": "web",
       "submitter": {
         "_id": 72,
-        "url": "http://initech.zendesk.com/api/v2/users/72.json",
+        "url": "http://initech.metaslim.com/api/v2/users/72.json",
         "external_id": "e906b32a-1661-4ac3-b7a6-767291d440de",
         "name": "Valentine Ashley",
         "alias": "Mr Larsen",
@@ -472,7 +472,7 @@
       },
       "assignee": {
         "_id": 64,
-        "url": "http://initech.zendesk.com/api/v2/users/64.json",
+        "url": "http://initech.metaslim.com/api/v2/users/64.json",
         "external_id": "a99365ac-8129-4ec5-b732-7c345d95bf7f",
         "name": "Boone Cooke",
         "alias": "Miss Rhodes",
@@ -498,7 +498,7 @@
       },
       "organization": {
         "_id": 105,
-        "url": "http://initech.zendesk.com/api/v2/organizations/105.json",
+        "url": "http://initech.metaslim.com/api/v2/organizations/105.json",
         "external_id": "52f12203-6112-4fb9-aadc-70a6c816d605",
         "name": "Koffee",
         "domain_names": [
@@ -520,7 +520,7 @@
     },
     {
       "_id": "25d9edca-7756-4d28-8fdd-f16f1532f6ab",
-      "url": "http://initech.zendesk.com/api/v2/tickets/25d9edca-7756-4d28-8fdd-f16f1532f6ab.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/25d9edca-7756-4d28-8fdd-f16f1532f6ab.json",
       "external_id": "c6782106-7623-4952-b4b1-8663f7b5e9dc",
       "created_at": "2016-03-01T05:58:09 -11:00",
       "type": "task",
@@ -542,7 +542,7 @@
       "via": "web",
       "submitter": {
         "_id": 62,
-        "url": "http://initech.zendesk.com/api/v2/users/62.json",
+        "url": "http://initech.metaslim.com/api/v2/users/62.json",
         "external_id": "00bc3803-6d86-4fec-a237-2153618095d3",
         "name": "Maé Bowman",
         "alias": "Miss Lily",
@@ -568,7 +568,7 @@
       },
       "assignee": {
         "_id": 75,
-        "url": "http://initech.zendesk.com/api/v2/users/75.json",
+        "url": "http://initech.metaslim.com/api/v2/users/75.json",
         "external_id": "0db0c1da-8901-4dc3-a469-fe4b500d0fca",
         "name": "Catalina Simpson",
         "alias": "Miss Rosanna",
@@ -594,7 +594,7 @@
       },
       "organization": {
         "_id": 125,
-        "url": "http://initech.zendesk.com/api/v2/organizations/125.json",
+        "url": "http://initech.metaslim.com/api/v2/organizations/125.json",
         "external_id": "42a1a845-70cf-40ed-a762-acb27fd606cc",
         "name": "Strezzö",
         "domain_names": [
@@ -616,7 +616,7 @@
     },
     {
       "_id": "25cb699f-a5dd-45d8-9bc1-9c4b7d096946",
-      "url": "http://initech.zendesk.com/api/v2/tickets/25cb699f-a5dd-45d8-9bc1-9c4b7d096946.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/25cb699f-a5dd-45d8-9bc1-9c4b7d096946.json",
       "external_id": "e85c7f58-59ed-4e05-9734-eb2a3aa92fa8",
       "created_at": "2016-04-03T04:05:26 -10:00",
       "type": "problem",
@@ -638,7 +638,7 @@
       "via": "chat",
       "submitter": {
         "_id": 59,
-        "url": "http://initech.zendesk.com/api/v2/users/59.json",
+        "url": "http://initech.metaslim.com/api/v2/users/59.json",
         "external_id": "4acd4eb0-9168-4270-b09f-09600a05b0b2",
         "name": "Key Mendez",
         "alias": "Mr Lucile",
@@ -664,7 +664,7 @@
       },
       "assignee": {
         "_id": 48,
-        "url": "http://initech.zendesk.com/api/v2/users/48.json",
+        "url": "http://initech.metaslim.com/api/v2/users/48.json",
         "external_id": "80e6a7b7-9a2a-4b93-93da-68bd5e95cbb8",
         "name": "Pitts Park",
         "alias": "Miss Betsy",
@@ -690,7 +690,7 @@
       },
       "organization": {
         "_id": 102,
-        "url": "http://initech.zendesk.com/api/v2/organizations/102.json",
+        "url": "http://initech.metaslim.com/api/v2/organizations/102.json",
         "external_id": "7cd6b8d4-2999-4ff2-8cfd-44d05b449226",
         "name": "Nutralab",
         "domain_names": [
@@ -712,7 +712,7 @@
     },
     {
       "_id": "6d6dbb5b-2b74-46a9-8e0a-8d8140f63412",
-      "url": "http://initech.zendesk.com/api/v2/tickets/6d6dbb5b-2b74-46a9-8e0a-8d8140f63412.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/6d6dbb5b-2b74-46a9-8e0a-8d8140f63412.json",
       "external_id": "1ef988d9-65b9-4f59-9930-844c97603b0f",
       "created_at": "2016-07-27T01:43:49 -10:00",
       "type": "task",
@@ -734,7 +734,7 @@
       "via": "web",
       "submitter": {
         "_id": 11,
-        "url": "http://initech.zendesk.com/api/v2/users/11.json",
+        "url": "http://initech.metaslim.com/api/v2/users/11.json",
         "external_id": "f844d39b-1d2c-4908-8719-48b5930bc6a2",
         "name": "Shelly Clements",
         "alias": "Miss Campos",
@@ -760,7 +760,7 @@
       },
       "assignee": {
         "_id": 73,
-        "url": "http://initech.zendesk.com/api/v2/users/73.json",
+        "url": "http://initech.metaslim.com/api/v2/users/73.json",
         "external_id": "a8b6c657-d47e-45b2-9c47-cf13b1b02f24",
         "name": "Moran Daniels",
         "alias": "Miss Livingston",
@@ -786,7 +786,7 @@
       },
       "organization": {
         "_id": 123,
-        "url": "http://initech.zendesk.com/api/v2/organizations/123.json",
+        "url": "http://initech.metaslim.com/api/v2/organizations/123.json",
         "external_id": "12831719-9173-47c7-8834-fa5b26877393",
         "name": "Terrasys",
         "domain_names": [
@@ -808,7 +808,7 @@
     },
     {
       "_id": "3ff0599a-fe0f-4f8f-ac31-e2636843bcea",
-      "url": "http://initech.zendesk.com/api/v2/tickets/3ff0599a-fe0f-4f8f-ac31-e2636843bcea.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/3ff0599a-fe0f-4f8f-ac31-e2636843bcea.json",
       "external_id": "dfc05543-cdf7-4165-8aab-f3a74b29b544",
       "created_at": "2016-05-15T12:59:16 -10:00",
       "type": "question",
@@ -830,7 +830,7 @@
       "via": "voice",
       "submitter": {
         "_id": 70,
-        "url": "http://initech.zendesk.com/api/v2/users/70.json",
+        "url": "http://initech.metaslim.com/api/v2/users/70.json",
         "external_id": "af6ff47c-1ca0-45b1-b7d9-598ff5147a0d",
         "name": "Nash Rivers",
         "alias": "Mr Alexandria",
@@ -856,7 +856,7 @@
       },
       "organization": {
         "_id": 102,
-        "url": "http://initech.zendesk.com/api/v2/organizations/102.json",
+        "url": "http://initech.metaslim.com/api/v2/organizations/102.json",
         "external_id": "7cd6b8d4-2999-4ff2-8cfd-44d05b449226",
         "name": "Nutralab",
         "domain_names": [
@@ -878,7 +878,7 @@
     },
     {
       "_id": "27ab7105-e852-42f3-91a3-2d77c7a0c3fc",
-      "url": "http://initech.zendesk.com/api/v2/tickets/27ab7105-e852-42f3-91a3-2d77c7a0c3fc.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/27ab7105-e852-42f3-91a3-2d77c7a0c3fc.json",
       "external_id": "74e795dd-fb0d-48aa-9c83-f90016ca8243",
       "created_at": "2016-02-27T03:26:47 -11:00",
       "type": "task",
@@ -900,7 +900,7 @@
       "via": "voice",
       "submitter": {
         "_id": 71,
-        "url": "http://initech.zendesk.com/api/v2/users/71.json",
+        "url": "http://initech.metaslim.com/api/v2/users/71.json",
         "external_id": "c972bb41-94aa-4f20-bc93-e63dbfe8d9ca",
         "name": "Prince Hinton",
         "alias": "Miss Dana",
@@ -926,7 +926,7 @@
       },
       "assignee": {
         "_id": 7,
-        "url": "http://initech.zendesk.com/api/v2/users/7.json",
+        "url": "http://initech.metaslim.com/api/v2/users/7.json",
         "external_id": "bce94e82-b4f4-438f-bc0b-2440e8265705",
         "name": "Lou Schmidt",
         "alias": "Miss Shannon",
@@ -952,7 +952,7 @@
       },
       "organization": {
         "_id": 111,
-        "url": "http://initech.zendesk.com/api/v2/organizations/111.json",
+        "url": "http://initech.metaslim.com/api/v2/organizations/111.json",
         "external_id": "852e22ab-76dc-4d92-9a1d-02d3e04349cb",
         "name": "Speedbolt",
         "domain_names": [
@@ -974,7 +974,7 @@
     },
     {
       "_id": "c71606b7-42f1-4390-8549-dfd87707969b",
-      "url": "http://initech.zendesk.com/api/v2/tickets/c71606b7-42f1-4390-8549-dfd87707969b.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/c71606b7-42f1-4390-8549-dfd87707969b.json",
       "external_id": "197a6890-e523-4cdf-bb63-1701b58364ea",
       "created_at": "2016-06-23T05:02:27 -10:00",
       "type": "question",
@@ -996,7 +996,7 @@
       "via": "voice",
       "submitter": {
         "_id": 50,
-        "url": "http://initech.zendesk.com/api/v2/users/50.json",
+        "url": "http://initech.metaslim.com/api/v2/users/50.json",
         "external_id": "e1378651-f998-4181-8b1b-35e99a30b900",
         "name": "Daniel Agüilar",
         "alias": "Mr Aüstin",
@@ -1022,7 +1022,7 @@
       },
       "assignee": {
         "_id": 35,
-        "url": "http://initech.zendesk.com/api/v2/users/35.json",
+        "url": "http://initech.metaslim.com/api/v2/users/35.json",
         "external_id": "46c880dd-d07e-4fd0-87d0-e92c167d029e",
         "name": "Brôôks Burke",
         "alias": "Mr Carpenter",
@@ -1048,7 +1048,7 @@
       },
       "organization": {
         "_id": 121,
-        "url": "http://initech.zendesk.com/api/v2/organizations/121.json",
+        "url": "http://initech.metaslim.com/api/v2/organizations/121.json",
         "external_id": "3fffbf20-9172-4d1d-923b-f247d9132e3a",
         "name": "Hotcâkes",
         "domain_names": [
@@ -1070,7 +1070,7 @@
     },
     {
       "_id": "6fed7d01-15dd-4b59-94f9-1093b4bc0995",
-      "url": "http://initech.zendesk.com/api/v2/tickets/6fed7d01-15dd-4b59-94f9-1093b4bc0995.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/6fed7d01-15dd-4b59-94f9-1093b4bc0995.json",
       "external_id": "cdb3576c-8d42-40e4-8f3f-6c1ea89f7766",
       "created_at": "2016-06-03T06:03:33 -10:00",
       "type": "task",
@@ -1092,7 +1092,7 @@
       "via": "voice",
       "submitter": {
         "_id": 27,
-        "url": "http://initech.zendesk.com/api/v2/users/27.json",
+        "url": "http://initech.metaslim.com/api/v2/users/27.json",
         "external_id": "ee53ec4a-8ae1-4090-8f27-ce511cc292f7",
         "name": "Haley Farmer",
         "alias": "Miss Lizzie",
@@ -1118,7 +1118,7 @@
       },
       "assignee": {
         "_id": 2,
-        "url": "http://initech.zendesk.com/api/v2/users/2.json",
+        "url": "http://initech.metaslim.com/api/v2/users/2.json",
         "external_id": "c9995ea4-ff72-46e0-ab77-dfe0ae1ef6c2",
         "name": "Cross Barlow",
         "alias": "Miss Joni",
@@ -1144,7 +1144,7 @@
       },
       "organization": {
         "_id": 102,
-        "url": "http://initech.zendesk.com/api/v2/organizations/102.json",
+        "url": "http://initech.metaslim.com/api/v2/organizations/102.json",
         "external_id": "7cd6b8d4-2999-4ff2-8cfd-44d05b449226",
         "name": "Nutralab",
         "domain_names": [
@@ -1166,7 +1166,7 @@
     },
     {
       "_id": "018ed12d-86bb-4379-a679-1184264ac5a2",
-      "url": "http://initech.zendesk.com/api/v2/tickets/018ed12d-86bb-4379-a679-1184264ac5a2.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/018ed12d-86bb-4379-a679-1184264ac5a2.json",
       "external_id": "eaa893e6-aaa5-41ca-b64a-2345a4d9ff4d",
       "created_at": "2016-05-17T08:27:45 -10:00",
       "type": "problem",
@@ -1188,7 +1188,7 @@
       "via": "chat",
       "submitter": {
         "_id": 8,
-        "url": "http://initech.zendesk.com/api/v2/users/8.json",
+        "url": "http://initech.metaslim.com/api/v2/users/8.json",
         "external_id": "fa13ffa4-0ba1-41d1-be4a-c1e7a92f25e4",
         "name": "Lolita Herring",
         "alias": "Miss Reyna",
@@ -1214,7 +1214,7 @@
       },
       "assignee": {
         "_id": 69,
-        "url": "http://initech.zendesk.com/api/v2/users/69.json",
+        "url": "http://initech.metaslim.com/api/v2/users/69.json",
         "external_id": "0320fff9-8a1f-4654-a8d5-dbf3c9c79591",
         "name": "Velasquez Cameron",
         "alias": "Miss Janette",
@@ -1240,7 +1240,7 @@
       },
       "organization": {
         "_id": 105,
-        "url": "http://initech.zendesk.com/api/v2/organizations/105.json",
+        "url": "http://initech.metaslim.com/api/v2/organizations/105.json",
         "external_id": "52f12203-6112-4fb9-aadc-70a6c816d605",
         "name": "Koffee",
         "domain_names": [
@@ -1262,7 +1262,7 @@
     },
     {
       "_id": "189eed9f-b44c-49f3-a904-2c482193996a",
-      "url": "http://initech.zendesk.com/api/v2/tickets/189eed9f-b44c-49f3-a904-2c482193996a.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/189eed9f-b44c-49f3-a904-2c482193996a.json",
       "external_id": "d8df91ac-382f-44ff-a3f2-196d06413864",
       "created_at": "2016-07-05T07:08:28 -10:00",
       "type": "task",
@@ -1284,7 +1284,7 @@
       "via": "voice",
       "submitter": {
         "_id": 20,
-        "url": "http://initech.zendesk.com/api/v2/users/20.json",
+        "url": "http://initech.metaslim.com/api/v2/users/20.json",
         "external_id": "1c8b9696-b5c5-4f5a-b077-5d85dd8b22f4",
         "name": "Lee Davidson",
         "alias": "Miss Hayes",
@@ -1310,7 +1310,7 @@
       },
       "assignee": {
         "_id": 57,
-        "url": "http://initech.zendesk.com/api/v2/users/57.json",
+        "url": "http://initech.metaslim.com/api/v2/users/57.json",
         "external_id": "cc91aaa0-49af-42aa-9a85-0278fee1a96c",
         "name": "Mari Deleon",
         "alias": "Mr Caitlin",
@@ -1336,7 +1336,7 @@
       },
       "organization": {
         "_id": 122,
-        "url": "http://initech.zendesk.com/api/v2/organizations/122.json",
+        "url": "http://initech.metaslim.com/api/v2/organizations/122.json",
         "external_id": "33c4e38d-bfa3-4b12-9bb6-6f547524cf33",
         "name": "Geekfarm",
         "domain_names": [
@@ -1358,7 +1358,7 @@
     },
     {
       "_id": "945ce2d3-3edc-4936-8d51-e59e74cf917a",
-      "url": "http://initech.zendesk.com/api/v2/tickets/945ce2d3-3edc-4936-8d51-e59e74cf917a.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/945ce2d3-3edc-4936-8d51-e59e74cf917a.json",
       "external_id": "5c741d66-cdd4-4d20-bb95-a3948217bf2c",
       "created_at": "2016-04-23T05:47:03 -10:00",
       "type": "task",
@@ -1380,7 +1380,7 @@
       "via": "voice",
       "submitter": {
         "_id": 70,
-        "url": "http://initech.zendesk.com/api/v2/users/70.json",
+        "url": "http://initech.metaslim.com/api/v2/users/70.json",
         "external_id": "af6ff47c-1ca0-45b1-b7d9-598ff5147a0d",
         "name": "Nash Rivers",
         "alias": "Mr Alexandria",
@@ -1406,7 +1406,7 @@
       },
       "assignee": {
         "_id": 32,
-        "url": "http://initech.zendesk.com/api/v2/users/32.json",
+        "url": "http://initech.metaslim.com/api/v2/users/32.json",
         "external_id": "b8ef8d96-4d64-49a3-b2c6-b04bdc23ba01",
         "name": "Lee Dotson",
         "alias": "Mr Eve",
@@ -1432,7 +1432,7 @@
       },
       "organization": {
         "_id": 118,
-        "url": "http://initech.zendesk.com/api/v2/organizations/118.json",
+        "url": "http://initech.metaslim.com/api/v2/organizations/118.json",
         "external_id": "6970300e-f211-4c01-a538-70b4464a1d84",
         "name": "Limozen",
         "domain_names": [
@@ -1454,7 +1454,7 @@
     },
     {
       "_id": "7a0b41db-f910-4814-8d75-1e0915ec5d27",
-      "url": "http://initech.zendesk.com/api/v2/tickets/7a0b41db-f910-4814-8d75-1e0915ec5d27.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/7a0b41db-f910-4814-8d75-1e0915ec5d27.json",
       "external_id": "51a0fa14-fd84-473f-92b0-62f58da25241",
       "created_at": "2016-03-15T07:32:22 -11:00",
       "type": "question",
@@ -1476,7 +1476,7 @@
       "via": "voice",
       "submitter": {
         "_id": 70,
-        "url": "http://initech.zendesk.com/api/v2/users/70.json",
+        "url": "http://initech.metaslim.com/api/v2/users/70.json",
         "external_id": "af6ff47c-1ca0-45b1-b7d9-598ff5147a0d",
         "name": "Nash Rivers",
         "alias": "Mr Alexandria",
@@ -1502,7 +1502,7 @@
       },
       "assignee": {
         "_id": 47,
-        "url": "http://initech.zendesk.com/api/v2/users/47.json",
+        "url": "http://initech.metaslim.com/api/v2/users/47.json",
         "external_id": "3abbffbf-eb9d-4738-825b-cf3c3e76f215",
         "name": "Dawson Schultz",
         "alias": "Mr Doris",
@@ -1528,7 +1528,7 @@
       },
       "organization": {
         "_id": 109,
-        "url": "http://initech.zendesk.com/api/v2/organizations/109.json",
+        "url": "http://initech.metaslim.com/api/v2/organizations/109.json",
         "external_id": "5f930931-37fd-41a2-9c68-1cd5b99e7a3e",
         "name": "Möreganic",
         "domain_names": [
@@ -1550,7 +1550,7 @@
     },
     {
       "_id": "a7b16a5c-76d9-4e60-aadc-33653b828173",
-      "url": "http://initech.zendesk.com/api/v2/tickets/a7b16a5c-76d9-4e60-aadc-33653b828173.json",
+      "url": "http://initech.metaslim.com/api/v2/tickets/a7b16a5c-76d9-4e60-aadc-33653b828173.json",
       "external_id": "c330acd5-26e0-4e99-b946-48b741225828",
       "created_at": "2016-04-10T03:31:51 -10:00",
       "type": "incident",
@@ -1572,7 +1572,7 @@
       "via": "voice",
       "submitter": {
         "_id": 54,
-        "url": "http://initech.zendesk.com/api/v2/users/54.json",
+        "url": "http://initech.metaslim.com/api/v2/users/54.json",
         "external_id": "a32204d7-fd49-4ba7-be1f-ca7763937e02",
         "name": "Spence Tate",
         "alias": "Miss Tamara",
@@ -1598,7 +1598,7 @@
       },
       "assignee": {
         "_id": 47,
-        "url": "http://initech.zendesk.com/api/v2/users/47.json",
+        "url": "http://initech.metaslim.com/api/v2/users/47.json",
         "external_id": "3abbffbf-eb9d-4738-825b-cf3c3e76f215",
         "name": "Dawson Schultz",
         "alias": "Mr Doris",
@@ -1624,7 +1624,7 @@
       },
       "organization": {
         "_id": 124,
-        "url": "http://initech.zendesk.com/api/v2/organizations/124.json",
+        "url": "http://initech.metaslim.com/api/v2/organizations/124.json",
         "external_id": "15c21605-cbc6-440f-8da2-6e1601aed5fa",
         "name": "Bitrex",
         "domain_names": [

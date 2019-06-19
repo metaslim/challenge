@@ -3,7 +3,8 @@ package model
 import (
 	"reflect"
 
-	"github.com/zendesk/challenge/lib/loader"
+	"github.com/metaslim/challenge/lib/loader"
+	"github.com/metaslim/challenge/lib/schema"
 )
 
 var _ Records = (*Organizations)(nil)
@@ -11,26 +12,11 @@ var _ SearchResult = (*OrganizationSearchResult)(nil)
 
 //Organizations is array of Organization
 type Organizations struct {
-	Items []Organization
-}
-
-//Organization is object to represent an orgaization
-type Organization struct {
-	ID            int      `json:"_id"`
-	URL           string   `json:"url"`
-	ExternalID    string   `json:"external_id"`
-	Name          string   `json:"name"`
-	DomainNames   []string `json:"domain_names"`
-	CreatedAt     string   `json:"created_at"`
-	Details       string   `json:"details"`
-	SharedTickets bool     `json:"shared_tickets"`
-	Tags          []string `json:"tags"`
-	Tickets       []Ticket `json:"tickets,omitempty"`
-	Users         []User   `json:"users,omitempty"`
+	Items []schema.Organization
 }
 
 type OrganizationSearchResult struct {
-	Items []Organization
+	Items []schema.Organization
 }
 
 func (organizationsSearchResult OrganizationSearchResult) Decorate(decorateParams DecorateParams) {
