@@ -5,17 +5,18 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/metaslim/challenge/lib/helper"
+	"github.com/metaslim/challenge/lib/setup"
+	"github.com/metaslim/challenge/lib/util"
 )
 
 func main() {
-	decorateParams, err := helper.LoadDecorateParams()
+	decorateParams, err := setup.LoadDecorateParams()
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
 	}
 
-	commands := helper.PrepareCommand()
+	commands := setup.PrepareCommand()
 
 	fmt.Println("Enter Command:")
 	fmt.Println("==================================")
@@ -24,13 +25,13 @@ func main() {
 	fmt.Println("==================================")
 
 	reader := bufio.NewReader(os.Stdin)
-	input := helper.ReadInput(reader)
+	input := util.ReadInput(reader)
 
 	for input != "quit" {
 		for _, command := range commands {
 			command.Run(input, decorateParams)
 		}
-		input = helper.ReadInput(reader)
+		input = util.ReadInput(reader)
 	}
 
 	fmt.Println("Bye and have a nice day ahead!")

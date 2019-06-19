@@ -1,7 +1,6 @@
-package helper
+package setup
 
 import (
-	"bufio"
 	"fmt"
 
 	"github.com/metaslim/challenge/lib/command"
@@ -83,11 +82,4 @@ func PrepareCommand() []command.Action {
 	commands = append(commands, &command.Search{})
 
 	return commands
-}
-
-func ReadInput(reader *bufio.Reader) string {
-	input, _ := reader.ReadString('\n')
-	input = input[:len(input)-1]
-
-	return input
 }
