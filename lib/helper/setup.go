@@ -9,21 +9,6 @@ import (
 	"github.com/metaslim/challenge/lib/model"
 )
 
-func LoadDecorateParams() (model.DecorateParams, error) {
-	organizations, users, tickets, err := loadAll()
-
-	if err != nil {
-		return model.DecorateParams{}, err
-	}
-
-	return model.DecorateParams{
-		Organizations: organizations,
-		Users:         users,
-		Tickets:       tickets,
-	}, nil
-
-}
-
 func loadAll() (model.Organizations, model.Users, model.Tickets, error) {
 	organizations, errOrganization := loadOrganizations()
 	users, errUsers := loadUsers()
@@ -74,6 +59,21 @@ func loadTickets() (model.Tickets, error) {
 	}
 
 	return tickets, nil
+}
+
+func LoadDecorateParams() (model.DecorateParams, error) {
+	organizations, users, tickets, err := loadAll()
+
+	if err != nil {
+		return model.DecorateParams{}, err
+	}
+
+	return model.DecorateParams{
+		Organizations: organizations,
+		Users:         users,
+		Tickets:       tickets,
+	}, nil
+
 }
 
 func PrepareCommand() []command.Action {
