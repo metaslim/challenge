@@ -71,16 +71,12 @@ func (users *Users) Search(searchKey string, searchTerm string) SearchResult {
 					var castedSearchTerm interface{}
 					var err error
 					switch searchKey {
-					case "_id":
-					case "organization_id":
+					case "_id", "organization_id":
 						castedSearchTerm, err = strconv.Atoi(searchTerm)
 						if err != nil {
 							break
 						}
-					case "active":
-					case "verified":
-					case "shared":
-					case "suspended":
+					case "active", "verified", "shared", "suspended":
 						castedSearchTerm, err = strconv.ParseBool(searchTerm)
 						if err != nil {
 							break

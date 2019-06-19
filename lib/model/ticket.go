@@ -72,9 +72,7 @@ func (tickets *Tickets) Search(searchKey string, searchTerm string) SearchResult
 					var castedSearchTerm interface{}
 					var err error
 					switch searchKey {
-					case "assignee_id":
-					case "submitter_id":
-					case "organization_id":
+					case "assignee_id", "submitter_id", "organization_id":
 						castedSearchTerm, err = strconv.Atoi(searchTerm)
 						if err != nil {
 							break
