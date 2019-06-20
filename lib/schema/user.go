@@ -22,6 +22,6 @@ type User struct {
 	Suspended        bool          `json:"suspended"`
 	Role             string        `json:"role"`
 	Organization     *Organization `json:"organization,omitempty"`
-	SubmittedTickets []Ticket      `json:"submitted_by,omitempty"`
-	AssignedTickets  []Ticket      `json:"assigned_to,omitempty"`
+	SubmittedTickets []Ticket      `json:"ticket_submitted,omitempty"`
+	AssignedTickets  []Ticket      `json:"ticket_assigned,omitempty"`
 }
