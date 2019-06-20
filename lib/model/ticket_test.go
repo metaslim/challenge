@@ -17,14 +17,14 @@ func TestTicketSearch(t *testing.T) {
 	}{
 		{
 			desc:       "return 2 tickets with ticket_type=incident",
-			tickets:    MockTickets,
+			tickets:    GetMockTickets(),
 			searchKey:  "type",
 			searchTerm: "incident",
 			expected:   2,
 		},
 		{
 			desc:       "return 1 ticket with description=",
-			tickets:    MockTickets,
+			tickets:    GetMockTickets(),
 			searchKey:  "description",
 			searchTerm: "",
 			expected:   1,

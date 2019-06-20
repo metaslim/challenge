@@ -17,14 +17,14 @@ func TestUserSearch(t *testing.T) {
 	}{
 		{
 			desc:       "return 1 user with signature=I can do this all day",
-			users:      MockUsers,
+			users:      GetMockUsers(),
 			searchKey:  "signature",
 			searchTerm: "I can do this all day",
 			expected:   1,
 		},
 		{
 			desc:       "return 2 users with tags=heroes",
-			users:      MockUsers,
+			users:      GetMockUsers(),
 			searchKey:  "tags",
 			searchTerm: "heroes",
 			expected:   2,
