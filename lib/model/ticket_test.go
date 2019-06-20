@@ -46,7 +46,7 @@ func TestTicketDecorate(t *testing.T) {
 		expected           []int
 	}{
 		{
-			desc:               "Ticket result is decorated succesfully, its number of users and tickets is 1 not 0",
+			desc:               "Ticket result is decorated succesfully, its Submitter, Assignee, and Organization is not nil",
 			ticketSearchResult: MockTicketSearchResult,
 			expected:           []int{1, 2, 1, 2, 1, 2},
 		},
