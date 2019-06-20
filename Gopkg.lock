@@ -18,6 +18,14 @@
   version = "v1.1.1"
 
 [[projects]]
+  digest = "1:f1a75a8e00244e5ea77ff274baa9559eb877437b240ee7b278f3fc560d9f08bf"
+  name = "github.com/dustin/go-humanize"
+  packages = ["."]
+  pruneopts = ""
+  revision = "9f541cc9db5d55bce703bd99987c9d5cb8eea45e"
+  version = "v1.0.0"
+
+[[projects]]
   digest = "1:eb53021a8aa3f599d29c7102e65026242bdedce998a54837dc67f14b6a97c5fd"
   name = "github.com/fsnotify/fsnotify"
   packages = ["."]
@@ -45,12 +53,36 @@
   version = "v1.0.0"
 
 [[projects]]
+  branch = "master"
+  digest = "1:54e43c3f95e012303896b1e6515450aaf7cf9ab77f3bf9ee70196ab06c67b6a2"
+  name = "github.com/kataras/tablewriter"
+  packages = ["."]
+  pruneopts = ""
+  revision = "e063d29b7c2363c8e21a25fdb4109f03beb50230"
+
+[[projects]]
+  branch = "master"
+  digest = "1:9f5e2e101f9d8741da7ee44d4644aef20fa211bce086a1d74f8c7129db93a44d"
+  name = "github.com/landoop/tableprinter"
+  packages = ["."]
+  pruneopts = ""
+  revision = "8bd8c2576d278c0352b9cecd384e609b51943f28"
+
+[[projects]]
   digest = "1:ae39921edb7f801f7ce1b6b5484f9715a1dd2b52cb645daef095cd10fd6ee774"
   name = "github.com/magiconair/properties"
   packages = ["."]
   pruneopts = ""
   revision = "de8848e004dd33dc07a2947b3d76f618a7fc7ef1"
   version = "v1.8.1"
+
+[[projects]]
+  digest = "1:84c28d9899cc4e00c38042d345cea8819275a5a62403a58530cac67022894776"
+  name = "github.com/mattn/go-runewidth"
+  packages = ["."]
+  pruneopts = ""
+  revision = "3ee7d812e62a0804a7d0a324e0249ca2db3476d3"
+  version = "v0.0.4"
 
 [[projects]]
   digest = "1:bcc46a0fbd9e933087bef394871256b5c60269575bb661935874729c65bbbf60"
@@ -179,6 +211,8 @@
   analyzer-version = 1
   input-imports = [
     "github.com/acarl005/stripansi",
+    "github.com/kataras/tablewriter",
+    "github.com/landoop/tableprinter",
     "github.com/spf13/viper",
     "github.com/stretchr/testify/assert",
     "github.com/tidwall/pretty",
