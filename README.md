@@ -19,4 +19,4 @@ make run
 
 ```
 
-Currently this app is using encoding/json which use reflection internally. In the future parsing json file can be improved with https://github.com/mailru/easyjson
+Currently this app is using Go internal library (encoding/json) which use reflection. In the future parsing json file should able to be improved with https://github.com/mailru/easyjson without reflection.
