@@ -3,6 +3,7 @@ package model
 import (
 	"testing"
 
+	"github.com/metaslim/challenge/lib/loader"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -62,6 +63,43 @@ func TestTicketDecorate(t *testing.T) {
 			assert.Equal(t, testCase.expected[3], testCase.ticketSearchResult.Items[1].Submitter.ID)
 			assert.Equal(t, testCase.expected[4], testCase.ticketSearchResult.Items[1].Assignee.ID)
 			assert.Equal(t, testCase.expected[5], testCase.ticketSearchResult.Items[1].Organization.ID)
+		})
+	}
+}
+
+func TestTicketPopulate(t *testing.T) {
+	testCases := []struct {
+		desc     string
+		tickets  Tickets
+		jsonFile string
+		expected int
+	}{
+		{
+			desc:     "Ticket is populated with 30 records from good json file",
+			tickets:  Tickets{},
+			jsonFile: `../../data/test-tickets.json`,
+			expected: 30,
+		},
+		{
+			desc:     "Ticket is not populated from bad json file",
+			tickets:  Tickets{},
+			jsonFile: `../../data/test-tickets-not-exists.json`,
+			expected: 0,
+		},
+	}
+
+	for _, testCase := range testCases {
+		testCase := testCase
+		t.Run(testCase.desc, func(t *testing.T) {
+			err := testCase.tickets.Populate(loader.JSONLoader{
+				FileName: testCase.jsonFile,
+			})
+
+			if err != nil {
+				assert.Equal(t, testCase.expected, testCase.tickets.GetSize())
+			}
+
+			assert.Equal(t, testCase.expected, testCase.tickets.GetSize())
 		})
 	}
 }

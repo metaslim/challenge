@@ -3,6 +3,7 @@ package model
 import (
 	"testing"
 
+	"github.com/metaslim/challenge/lib/loader"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -62,6 +63,43 @@ func TestUserDecorate(t *testing.T) {
 			assert.Equal(t, testCase.expected[0], testCase.userSearchResult.Items[0].Organization.ID)
 			assert.Equal(t, testCase.expected[1], len(testCase.userSearchResult.Items[0].SubmittedTickets))
 			assert.Equal(t, testCase.expected[2], len(testCase.userSearchResult.Items[0].AssignedTickets))
+		})
+	}
+}
+
+func TestUserPopulate(t *testing.T) {
+	testCases := []struct {
+		desc     string
+		users    Users
+		jsonFile string
+		expected int
+	}{
+		{
+			desc:     "Ticket is populated with 20 records from good json file",
+			users:    Users{},
+			jsonFile: `../../data/test-users.json`,
+			expected: 20,
+		},
+		{
+			desc:     "Ticket is not populated from bad json file",
+			users:    Users{},
+			jsonFile: `../../data/test-users-not-exist.json`,
+			expected: 0,
+		},
+	}
+
+	for _, testCase := range testCases {
+		testCase := testCase
+		t.Run(testCase.desc, func(t *testing.T) {
+			err := testCase.users.Populate(loader.JSONLoader{
+				FileName: testCase.jsonFile,
+			})
+
+			if err != nil {
+				assert.Equal(t, testCase.expected, testCase.users.GetSize())
+			}
+
+			assert.Equal(t, testCase.expected, testCase.users.GetSize())
 		})
 	}
 }
