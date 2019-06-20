@@ -4,6 +4,7 @@ import (
 	"testing"
 
 	"github.com/metaslim/challenge/lib/model"
+	"github.com/metaslim/challenge/lib/util"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -61,7 +62,7 @@ func TestHelpRun(t *testing.T) {
 		t.Run(testCase.desc, func(t *testing.T) {
 			testCase.help.Valid()
 
-			output := captureOutput(func() {
+			output := util.CaptureOutput(func() {
 				testCase.help.Run(model.MockDataSet)
 			})
 

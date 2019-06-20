@@ -82,7 +82,7 @@ func TestOrganizationPopulate(t *testing.T) {
 			desc:          "Organization is not populated from bad json file",
 			organizations: Organizations{},
 			jsonFile:      `../../data/test-organizations-not-exists.json`,
-			expected:      0,
+			expected:      10,
 		},
 	}
 
@@ -94,10 +94,10 @@ func TestOrganizationPopulate(t *testing.T) {
 			})
 
 			if err != nil {
+				assert.NotEqual(t, testCase.expected, testCase.organizations.GetSize())
+			} else {
 				assert.Equal(t, testCase.expected, testCase.organizations.GetSize())
 			}
-
-			assert.Equal(t, testCase.expected, testCase.organizations.GetSize())
 		})
 	}
 }

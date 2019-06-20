@@ -1,11 +1,10 @@
 package command
 
 import (
-	"io/ioutil"
-	"os"
 	"testing"
 
 	"github.com/metaslim/challenge/lib/model"
+	"github.com/metaslim/challenge/lib/util"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -103,25 +102,11 @@ func TestDescribeRun(t *testing.T) {
 		t.Run(testCase.desc, func(t *testing.T) {
 			testCase.describe.Valid()
 
-			output := captureOutput(func() {
+			output := util.CaptureOutput(func() {
 				testCase.describe.Run(model.MockDataSet)
 			})
 
 			assert.Contains(t, output, testCase.expected)
 		})
 	}
-}
-
-func captureOutput(f func()) string {
-	rescueStdout := os.Stdout
-	r, w, _ := os.Pipe()
-	os.Stdout = w
-
-	f()
-
-	w.Close()
-	out, _ := ioutil.ReadAll(r)
-	os.Stdout = rescueStdout
-
-	return string(out)
 }

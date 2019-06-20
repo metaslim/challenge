@@ -84,7 +84,7 @@ func TestUserPopulate(t *testing.T) {
 			desc:     "Ticket is not populated from bad json file",
 			users:    Users{},
 			jsonFile: `../../data/test-users-not-exist.json`,
-			expected: 0,
+			expected: 20,
 		},
 	}
 
@@ -96,10 +96,10 @@ func TestUserPopulate(t *testing.T) {
 			})
 
 			if err != nil {
+				assert.NotEqual(t, testCase.expected, testCase.users.GetSize())
+			} else {
 				assert.Equal(t, testCase.expected, testCase.users.GetSize())
 			}
-
-			assert.Equal(t, testCase.expected, testCase.users.GetSize())
 		})
 	}
 }

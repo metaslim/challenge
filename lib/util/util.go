@@ -2,6 +2,8 @@ package util
 
 import (
 	"bufio"
+	"io/ioutil"
+	"os"
 
 	"github.com/metaslim/challenge/lib/config"
 	"github.com/spf13/viper"
@@ -29,4 +31,18 @@ func LoadConfiguration() (config.Config, error) {
 
 	viper.Unmarshal(&appConfig)
 	return appConfig, nil
+}
+
+func CaptureOutput(f func()) string {
+	rescueStdout := os.Stdout
+	r, w, _ := os.Pipe()
+	os.Stdout = w
+
+	f()
+
+	w.Close()
+	out, _ := ioutil.ReadAll(r)
+	os.Stdout = rescueStdout
+
+	return string(out)
 }

@@ -5,6 +5,7 @@ import (
 
 	"github.com/metaslim/challenge/lib/model"
 	"github.com/metaslim/challenge/lib/presenter"
+	"github.com/metaslim/challenge/lib/util"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -135,7 +136,7 @@ func TestSearcheRun(t *testing.T) {
 		t.Run(testCase.desc, func(t *testing.T) {
 			testCase.search.Valid()
 
-			output := captureOutput(func() {
+			output := util.CaptureOutput(func() {
 				testCase.search.Run(model.MockDataSet)
 			})
 
