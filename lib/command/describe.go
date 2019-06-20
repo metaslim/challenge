@@ -55,5 +55,5 @@ func (action Describe) Run(dataSet model.DataSet) {
 			fmt.Printf("\t%s\n", matches[1])
 		}
 	}
-	fmt.Println("================================================\n")
+	fmt.Println("================================================")
 }

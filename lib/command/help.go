@@ -35,5 +35,5 @@ func (action Help) Run(dataSet model.DataSet) {
 	fmt.Println("\t`search-organizations:tags=West` will return any organizations who has West in thier Tags")
 	fmt.Println("\t`search-users:alias=Miss Coffey` will return any users whose alias is Miss Coffey")
 	fmt.Println("\t`search-tickets:status=pending` will return any tickets with pending status")
-	fmt.Println("=============================================================================================\n")
+	fmt.Println("=============================================================================================")
 }
