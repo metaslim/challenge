@@ -32,6 +32,10 @@ func (action *Search) Valid() bool {
 func (action Search) Run(dataSet model.DataSet) {
 	matches := action.regex.FindStringSubmatch(action.Input)
 
+	if matches == nil {
+		return
+	}
+
 	searchEngine := matches[1]
 	field := matches[2]
 	searchterm := matches[3]
@@ -56,5 +60,4 @@ func (action Search) Run(dataSet model.DataSet) {
 	result.Decorate(dataSet)
 
 	action.Presenter.Flush(result)
-
 }

@@ -30,6 +30,10 @@ func (action *Describe) Valid() bool {
 func (action Describe) Run(dataSet model.DataSet) {
 	matches := action.regex.FindStringSubmatch(action.Input)
 
+	if matches == nil {
+		return
+	}
+
 	describeEngine := matches[1]
 
 	var val reflect.Value

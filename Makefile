@@ -5,4 +5,4 @@ run:
 	@go run main.go
 
 test:
-	@go test ./... -race -cover
+	@go test -v ./... -race -cover
