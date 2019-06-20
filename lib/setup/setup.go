@@ -5,13 +5,14 @@ import (
 	"sync"
 
 	"github.com/metaslim/challenge/lib/command"
+	"github.com/metaslim/challenge/lib/config"
 	"github.com/metaslim/challenge/lib/loader"
 	"github.com/metaslim/challenge/lib/model"
 	"github.com/metaslim/challenge/lib/presenter"
 )
 
 //loadAll is a helper method to load all the data sources, each data will be loaded concurrently
-func loadAll() (model.Organizations, model.Users, model.Tickets, error) {
+func loadAll(appConfig config.Config) (model.Organizations, model.Users, model.Tickets, error) {
 	organizationsChannel := make(chan model.Organizations, 1)
 	usersChannel := make(chan model.Users, 1)
 	ticketsChannel := make(chan model.Tickets, 1)
@@ -23,17 +24,17 @@ func loadAll() (model.Organizations, model.Users, model.Tickets, error) {
 	wg := &sync.WaitGroup{}
 
 	wg.Add(1)
-	go loadOrganizations(organizationsChannel, errOrganizationsChannel, wg)
+	go loadOrganizations(appConfig.Data.Organization, organizationsChannel, errOrganizationsChannel, wg)
 	organizations := <-organizationsChannel
 	errOrganization := <-errOrganizationsChannel
 
 	wg.Add(1)
-	go loadUsers(usersChannel, errUsersChannel, wg)
+	go loadUsers(appConfig.Data.User, usersChannel, errUsersChannel, wg)
 	users := <-usersChannel
 	errUsers := <-errUsersChannel
 
 	wg.Add(1)
-	go loadTickets(ticketsChannel, errTicketsChannel, wg)
+	go loadTickets(appConfig.Data.Ticket, ticketsChannel, errTicketsChannel, wg)
 	tickets := <-ticketsChannel
 	errTickets := <-errTicketsChannel
 
@@ -48,7 +49,7 @@ func loadAll() (model.Organizations, model.Users, model.Tickets, error) {
 }
 
 //loadOrganizations is a helper method to load Organizations
-func loadOrganizations(outChannel chan model.Organizations, errChannel chan error, wg *sync.WaitGroup) {
+func loadOrganizations(jsonFile string, outChannel chan model.Organizations, errChannel chan error, wg *sync.WaitGroup) {
 	defer close(errChannel)
 	defer close(outChannel)
 	defer wg.Done()
@@ -56,7 +57,7 @@ func loadOrganizations(outChannel chan model.Organizations, errChannel chan erro
 	organizations := model.Organizations{}
 
 	err := organizations.Populate(loader.JSONLoader{
-		FileName: "data/organizations.json",
+		FileName: jsonFile,
 	})
 
 	if err != nil {
@@ -68,7 +69,7 @@ func loadOrganizations(outChannel chan model.Organizations, errChannel chan erro
 }
 
 //loadUsers is a helper method to load Users
-func loadUsers(outChannel chan model.Users, errChannel chan error, wg *sync.WaitGroup) {
+func loadUsers(jsonFile string, outChannel chan model.Users, errChannel chan error, wg *sync.WaitGroup) {
 	defer close(errChannel)
 	defer close(outChannel)
 	defer wg.Done()
@@ -76,7 +77,7 @@ func loadUsers(outChannel chan model.Users, errChannel chan error, wg *sync.Wait
 	users := model.Users{}
 
 	err := users.Populate(loader.JSONLoader{
-		FileName: "data/users.json",
+		FileName: jsonFile,
 	})
 
 	if err != nil {
@@ -88,7 +89,7 @@ func loadUsers(outChannel chan model.Users, errChannel chan error, wg *sync.Wait
 }
 
 //loadTickets is a helper method to load Tickets
-func loadTickets(outChannel chan model.Tickets, errChannel chan error, wg *sync.WaitGroup) {
+func loadTickets(jsonFile string, outChannel chan model.Tickets, errChannel chan error, wg *sync.WaitGroup) {
 	defer close(errChannel)
 	defer close(outChannel)
 	defer wg.Done()
@@ -96,7 +97,7 @@ func loadTickets(outChannel chan model.Tickets, errChannel chan error, wg *sync.
 	tickets := model.Tickets{}
 
 	err := tickets.Populate(loader.JSONLoader{
-		FileName: "data/tickets.json",
+		FileName: jsonFile,
 	})
 
 	if err != nil {
@@ -108,8 +109,8 @@ func loadTickets(outChannel chan model.Tickets, errChannel chan error, wg *sync.
 }
 
 //LoadDataSet is a helper method to merge all the data into one set to be consumed
-func LoadDataSet() (model.DataSet, error) {
-	organizations, users, tickets, err := loadAll()
+func LoadDataSet(appConfig config.Config) (model.DataSet, error) {
+	organizations, users, tickets, err := loadAll(appConfig)
 
 	if err != nil {
 		return model.DataSet{}, err

@@ -1,0 +1,4 @@
+[Data]
+Organization = "data/organizations.json"
+User = "data/users.json"
+Ticket = "data/tickets.json"

@@ -10,7 +10,14 @@ import (
 )
 
 func main() {
-	dataSet, err := setup.LoadDataSet()
+
+	appConfig, err := util.LoadConfiguration()
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+
+	dataSet, err := setup.LoadDataSet(appConfig)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
