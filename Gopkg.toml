@@ -36,5 +36,13 @@
 [[constraint]]
   name = "github.com/acarl005/stripansi"
   branch="master"
+
+[[constraint]]
+  name = "github.com/landoop/tableprinter"
+  branch="master"
+
+[[constraint]]
+  name = "github.com/landoop/tablewriter"
+  branch="master"
   
   

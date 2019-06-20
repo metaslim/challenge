@@ -131,6 +131,7 @@ func PrepareCommand() []command.Action {
 	commands = append(commands, &command.Help{})
 	commands = append(commands, &command.Describe{})
 	commands = append(commands, &command.Search{Presenter: presenter.Json{}})
+	commands = append(commands, &command.Table{Presenter: presenter.Table{}})
 
 	return commands
 }
