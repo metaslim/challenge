@@ -1,5 +1,4 @@
-# catalogue-service
-Simple Code Challenge
+# Simple Code Challenge
 
 ## Setting up locally
 
