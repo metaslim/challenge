@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	decorateParams, err := setup.LoadDecorateParams()
+	dataSet, err := setup.LoadDataSet()
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
@@ -31,7 +31,7 @@ func main() {
 		for _, command := range commands {
 			command.SetInput(input)
 			if command.Valid() {
-				command.Run(decorateParams)
+				command.Run(dataSet)
 				break
 			}
 		}

@@ -1,6 +1,6 @@
 package schema
 
-//Organization is object to represent an orgaization
+//Organization is object to represent an organization, json: will be the key to be interacted with such as search and display rather than using intenal struct field
 type Organization struct {
 	ID            int      `json:"_id"`
 	URL           string   `json:"url"`

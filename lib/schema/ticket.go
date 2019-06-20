@@ -1,6 +1,6 @@
 package schema
 
-//Ticket is object to represent ticket
+//Ticket is object to represent ticket, json: will be the key to be interacted with such as search and display rather than using intenal struct field
 type Ticket struct {
 	ID             string        `json:"_id"`
 	URL            string        `json:"url"`

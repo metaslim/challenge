@@ -11,12 +11,14 @@ import (
 
 var _ Action = (*Help)(nil)
 
+//Search is action struct to give ability to search data
 type Search struct {
 	Base
 	regex     *regexp.Regexp
 	Presenter presenter.Output
 }
 
+//Valid will control if the command will trigger Run
 func (action *Search) Valid() bool {
 	if action.regex == nil {
 		regex, _ := regexp.Compile(`^(?i)search-(organizations|users|tickets):(.*)=(.*)$`)
@@ -26,7 +28,8 @@ func (action *Search) Valid() bool {
 	return action.regex.MatchString(action.Input)
 }
 
-func (action Search) Run(params model.DecorateParams) {
+//Run will be executed for search command
+func (action Search) Run(dataSet model.DataSet) {
 	matches := action.regex.FindStringSubmatch(action.Input)
 
 	searchEngine := matches[1]
@@ -36,11 +39,11 @@ func (action Search) Run(params model.DecorateParams) {
 	var search model.Records
 	switch searchEngine {
 	case "organizations":
-		search = &params.Organizations
+		search = &dataSet.Organizations
 	case "users":
-		search = &params.Users
+		search = &dataSet.Users
 	case "tickets":
-		search = &params.Tickets
+		search = &dataSet.Tickets
 	}
 
 	result := search.Search(field, searchterm)
@@ -50,7 +53,7 @@ func (action Search) Run(params model.DecorateParams) {
 		return
 	}
 
-	result.Decorate(params)
+	result.Decorate(dataSet)
 
 	action.Presenter.Flush(result)
 

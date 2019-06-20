@@ -11,25 +11,27 @@ import (
 var _ Records = (*Organizations)(nil)
 var _ SearchResult = (*OrganizationSearchResult)(nil)
 
-//Organizations is array of Organization
+//Organizations will contain Organization data source
 type Organizations struct {
 	Items []schema.Organization
 }
 
+//OrganizationSearchResult will contain Organization search result
 type OrganizationSearchResult struct {
 	Items []schema.Organization
 	BaseSearchResult
 }
 
-func (organizationsSearchResult OrganizationSearchResult) Decorate(decorateParams DecorateParams) {
+//Decorate will decorate the search result, in this case it will populate Tickets and Users properties
+func (organizationsSearchResult OrganizationSearchResult) Decorate(dataSet DataSet) {
 	for key, _ := range organizationsSearchResult.Items {
-		for _, ticket := range decorateParams.Tickets.Items {
+		for _, ticket := range dataSet.Tickets.Items {
 			if organizationsSearchResult.Items[key].ID == ticket.OrganizationID {
 				organizationsSearchResult.Items[key].Tickets = append(organizationsSearchResult.Items[key].Tickets, ticket)
 			}
 		}
 
-		for _, user := range decorateParams.Users.Items {
+		for _, user := range dataSet.Users.Items {
 			if organizationsSearchResult.Items[key].ID == user.OrganizationID {
 				organizationsSearchResult.Items[key].Users = append(organizationsSearchResult.Items[key].Users, user)
 			}
@@ -37,11 +39,12 @@ func (organizationsSearchResult OrganizationSearchResult) Decorate(decorateParam
 	}
 }
 
-//Populate is
+//Populate will load data from data source such as json
 func (organizations *Organizations) Populate(jsonLoader loader.JSONLoader) error {
 	return load(jsonLoader, &organizations.Items)
 }
 
+//Search will allow data source to be searched
 func (organizations *Organizations) Search(searchKey string, searchTerm string) SearchResult {
 	results := OrganizationSearchResult{}
 

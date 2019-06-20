@@ -11,43 +11,46 @@ import (
 var _ Records = (*Users)(nil)
 var _ SearchResult = (*UserSearchResult)(nil)
 
-//Users is array of User
+//Users will contains User data source
 type Users struct {
 	Items []schema.User
 }
 
+//UserSearchResult will contain User search result
 type UserSearchResult struct {
 	Items []schema.User
 	BaseSearchResult
 }
 
-func (userSearchResult UserSearchResult) Decorate(decorateParams DecorateParams) {
+//Decorate will decorate the search result, in this case it will populate Organization, SubmittedTicket, and AssignedTicket properties
+func (userSearchResult UserSearchResult) Decorate(dataSet DataSet) {
 	for key, _ := range userSearchResult.Items {
-		for _, organization := range decorateParams.Organizations.Items {
+		for _, organization := range dataSet.Organizations.Items {
 			if userSearchResult.Items[key].OrganizationID == organization.ID {
 				matched_organization := organization
 				userSearchResult.Items[key].Organization = &matched_organization
 			}
 		}
 
-		for _, ticket := range decorateParams.Tickets.Items {
+		for _, ticket := range dataSet.Tickets.Items {
 			if userSearchResult.Items[key].ID == ticket.SubmitterID {
-				userSearchResult.Items[key].SubmittedTicket = append(userSearchResult.Items[key].SubmittedTicket, ticket)
+				userSearchResult.Items[key].SubmittedTickets = append(userSearchResult.Items[key].SubmittedTickets, ticket)
 			}
 
 			if userSearchResult.Items[key].ID == ticket.AssigneeID {
-				userSearchResult.Items[key].AssignedTicket = append(userSearchResult.Items[key].AssignedTicket, ticket)
+				userSearchResult.Items[key].AssignedTickets = append(userSearchResult.Items[key].AssignedTickets, ticket)
 			}
 		}
 
 	}
 }
 
-//Populate is
+//Populate will load data from data source such as json
 func (users *Users) Populate(jsonLoader loader.JSONLoader) error {
 	return load(jsonLoader, &users.Items)
 }
 
+//Search will allow data source to be searched
 func (users *Users) Search(searchKey string, searchTerm string) SearchResult {
 	results := UserSearchResult{}
 

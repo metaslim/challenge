@@ -11,19 +11,21 @@ import (
 var _ Records = (*Tickets)(nil)
 var _ SearchResult = (*TicketSearchResult)(nil)
 
-//Tickets is array of Tickets
+//Tickets will contains Ticket data source
 type Tickets struct {
 	Items []schema.Ticket
 }
 
+//TicketSearchResult will contain Ticket search result
 type TicketSearchResult struct {
 	Items []schema.Ticket
 	BaseSearchResult
 }
 
-func (ticketSearchResult TicketSearchResult) Decorate(decorateParams DecorateParams) {
+//Decorate will decorate the search result, in this case it will populate Submitter, Assignee, and Organization properties
+func (ticketSearchResult TicketSearchResult) Decorate(dataSet DataSet) {
 	for key, _ := range ticketSearchResult.Items {
-		for _, user := range decorateParams.Users.Items {
+		for _, user := range dataSet.Users.Items {
 			if ticketSearchResult.Items[key].SubmitterID == user.ID {
 				matched_user := user
 				ticketSearchResult.Items[key].Submitter = &matched_user
@@ -35,7 +37,7 @@ func (ticketSearchResult TicketSearchResult) Decorate(decorateParams DecoratePar
 			}
 		}
 
-		for _, organization := range decorateParams.Organizations.Items {
+		for _, organization := range dataSet.Organizations.Items {
 			if ticketSearchResult.Items[key].OrganizationID == organization.ID {
 				matched_organization := organization
 				ticketSearchResult.Items[key].Organization = &matched_organization
@@ -44,11 +46,12 @@ func (ticketSearchResult TicketSearchResult) Decorate(decorateParams DecoratePar
 	}
 }
 
-//Populate is
+//Populate will load data from data source such as json
 func (tickets *Tickets) Populate(jsonLoader loader.JSONLoader) error {
 	return load(jsonLoader, &tickets.Items)
 }
 
+//Search will allow data source to be searched
 func (tickets *Tickets) Search(searchKey string, searchTerm string) SearchResult {
 	results := TicketSearchResult{}
 

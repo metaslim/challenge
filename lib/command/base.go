@@ -4,17 +4,19 @@ import (
 	"github.com/metaslim/challenge/lib/model"
 )
 
-//Loader is an interface that require Load to be implemented and return a file handle to be consumed
+//Action is interface to give ability to run command
 type Action interface {
 	Valid() bool
 	SetInput(string)
-	Run(model.DecorateParams)
+	Run(model.DataSet)
 }
 
+//Base is action base struct that store command from user
 type Base struct {
 	Input string
 }
 
+//SetInput is will save user commnad to be consumed by object who embed base
 func (action *Base) SetInput(command string) {
 	(*action).Input = command
 }

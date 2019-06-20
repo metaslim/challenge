@@ -5,12 +5,6 @@ import (
 	"os"
 )
 
-//Loader is an interface that require Load to be implemented and return a file handle to be consumed
-type Loader interface {
-	GetFileHandle() (*os.File, error)
-	Parse() func([]byte, interface{}) error
-}
-
 var _ Loader = (*JSONLoader)(nil)
 
 //JSONLoader is struct that will implement Loader interface
@@ -18,7 +12,7 @@ type JSONLoader struct {
 	FileName string
 }
 
-//Load return valid filehandle
+//GetFileHandle return valid filehandle
 func (jsonLoader JSONLoader) GetFileHandle() (*os.File, error) {
 	fileHandle, err := os.Open(jsonLoader.FileName)
 

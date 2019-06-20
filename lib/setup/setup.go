@@ -10,6 +10,7 @@ import (
 	"github.com/metaslim/challenge/lib/presenter"
 )
 
+//loadAll is a helper method to load all the data sources, each data will be loaded concurrently
 func loadAll() (model.Organizations, model.Users, model.Tickets, error) {
 	organizationsChannel := make(chan model.Organizations, 1)
 	usersChannel := make(chan model.Users, 1)
@@ -47,6 +48,7 @@ func loadAll() (model.Organizations, model.Users, model.Tickets, error) {
 	return organizations, users, tickets, err
 }
 
+//loadOrganizations is a helper method to load Organizations
 func loadOrganizations(outChannel chan model.Organizations, errChannel chan error, wg *sync.WaitGroup) {
 	defer close(errChannel)
 	defer close(outChannel)
@@ -66,6 +68,7 @@ func loadOrganizations(outChannel chan model.Organizations, errChannel chan erro
 	outChannel <- organizations
 }
 
+//loadUsers is a helper method to load Users
 func loadUsers(outChannel chan model.Users, errChannel chan error, wg *sync.WaitGroup) {
 	defer close(errChannel)
 	defer close(outChannel)
@@ -85,6 +88,7 @@ func loadUsers(outChannel chan model.Users, errChannel chan error, wg *sync.Wait
 	outChannel <- users
 }
 
+//loadTickets is a helper method to load Tickets
 func loadTickets(outChannel chan model.Tickets, errChannel chan error, wg *sync.WaitGroup) {
 	defer close(errChannel)
 	defer close(outChannel)
@@ -104,14 +108,15 @@ func loadTickets(outChannel chan model.Tickets, errChannel chan error, wg *sync.
 	outChannel <- tickets
 }
 
-func LoadDecorateParams() (model.DecorateParams, error) {
+//LoadDataSet is a helper method to merge all the data into one set to be consumed
+func LoadDataSet() (model.DataSet, error) {
 	organizations, users, tickets, err := loadAll()
 
 	if err != nil {
-		return model.DecorateParams{}, err
+		return model.DataSet{}, err
 	}
 
-	return model.DecorateParams{
+	return model.DataSet{
 		Organizations: organizations,
 		Users:         users,
 		Tickets:       tickets,
@@ -119,6 +124,7 @@ func LoadDecorateParams() (model.DecorateParams, error) {
 
 }
 
+//PrepareCommand is a helper method to set up all commands for user to be inputted
 func PrepareCommand() []command.Action {
 	commands := []command.Action{}
 
