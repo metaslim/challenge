@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/metaslim/challenge/lib/mocks"
+	"github.com/metaslim/challenge/lib/model"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -104,7 +104,7 @@ func TestDescribeRun(t *testing.T) {
 			testCase.describe.Valid()
 
 			output := captureOutput(func() {
-				testCase.describe.Run(mocks.MockDataSet)
+				testCase.describe.Run(model.MockDataSet)
 			})
 
 			assert.Contains(t, output, testCase.expected)

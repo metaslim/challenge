@@ -1,12 +1,11 @@
-package mocks
+package model
 
 import (
-	"github.com/metaslim/challenge/lib/model"
 	"github.com/metaslim/challenge/lib/schema"
 )
 
-var MockOrganizations = model.Organizations{
-	BaseRecords: model.BaseRecords{
+var MockOrganizationSearchResult = OrganizationSearchResult{
+	BaseSearchResult: BaseSearchResult{
 		Size: 2,
 	},
 	Items: []schema.Organization{
@@ -43,8 +42,8 @@ var MockOrganizations = model.Organizations{
 	},
 }
 
-var MockTickets = model.Tickets{
-	BaseRecords: model.BaseRecords{
+var MockTicketSearchResult = TicketSearchResult{
+	BaseSearchResult: BaseSearchResult{
 		Size: 2,
 	},
 	Items: []schema.Ticket{
@@ -90,8 +89,8 @@ var MockTickets = model.Tickets{
 		},
 	},
 }
-var MockUsers = model.Users{
-	BaseRecords: model.BaseRecords{
+var MockUserSearchResult = UserSearchResult{
+	BaseSearchResult: BaseSearchResult{
 		Size: 2,
 	},
 	Items: []schema.User{
@@ -142,10 +141,4 @@ var MockUsers = model.Users{
 			Role:      "admin",
 		},
 	},
-}
-
-var MockDataSet = model.DataSet{
-	Organizations: MockOrganizations,
-	Tickets:       MockTickets,
-	Users:         MockUsers,
 }

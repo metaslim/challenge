@@ -3,7 +3,7 @@ package command
 import (
 	"testing"
 
-	"github.com/metaslim/challenge/lib/mocks"
+	"github.com/metaslim/challenge/lib/model"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -62,7 +62,7 @@ func TestHelpRun(t *testing.T) {
 			testCase.help.Valid()
 
 			output := captureOutput(func() {
-				testCase.help.Run(mocks.MockDataSet)
+				testCase.help.Run(model.MockDataSet)
 			})
 
 			assert.Contains(t, output, testCase.expected)

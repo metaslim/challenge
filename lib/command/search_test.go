@@ -3,7 +3,7 @@ package command
 import (
 	"testing"
 
-	"github.com/metaslim/challenge/lib/mocks"
+	"github.com/metaslim/challenge/lib/model"
 	"github.com/metaslim/challenge/lib/presenter"
 	"github.com/stretchr/testify/assert"
 )
@@ -136,7 +136,7 @@ func TestSearcheRun(t *testing.T) {
 			testCase.search.Valid()
 
 			output := captureOutput(func() {
-				testCase.search.Run(mocks.MockDataSet)
+				testCase.search.Run(model.MockDataSet)
 			})
 
 			assert.Contains(t, output, testCase.expected)
