@@ -56,4 +56,4 @@ make run
 "search-tickets:status=pending" will return any tickets with pending status
 ```
 
-Currently this app is using Go internal library (encoding/json) which use reflection. In the future parsing json file should able to be improved with https://github.com/mailru/easyjson without reflection.
+Currently this app is using Go internal library (encoding/json) which use reflection. In the future json file parsing can be improved by using https://github.com/mailru/easyjson (without reflection).
