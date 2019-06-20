@@ -103,7 +103,7 @@ func TestDescribeRun(t *testing.T) {
 			testCase.describe.Valid()
 
 			output := util.CaptureOutput(func() {
-				testCase.describe.Run(model.MockDataSet)
+				testCase.describe.Run(model.GetMockDataSet())
 			})
 
 			assert.Contains(t, output, testCase.expected)

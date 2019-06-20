@@ -152,8 +152,11 @@ func GetMockUsers() Users {
 	}
 }
 
-var MockDataSet = DataSet{
-	Organizations: GetMockOrganizations(),
-	Tickets:       GetMockTickets(),
-	Users:         GetMockUsers(),
+func GetMockDataSet() DataSet {
+	return DataSet{
+		Organizations: GetMockOrganizations(),
+		Tickets:       GetMockTickets(),
+		Users:         GetMockUsers(),
+	}
+
 }

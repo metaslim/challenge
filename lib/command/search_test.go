@@ -137,7 +137,7 @@ func TestSearcheRun(t *testing.T) {
 			testCase.search.Valid()
 
 			output := util.CaptureOutput(func() {
-				testCase.search.Run(model.MockDataSet)
+				testCase.search.Run(model.GetMockDataSet())
 			})
 
 			assert.Contains(t, output, testCase.expected)

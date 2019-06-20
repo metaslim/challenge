@@ -63,7 +63,7 @@ func TestHelpRun(t *testing.T) {
 			testCase.help.Valid()
 
 			output := util.CaptureOutput(func() {
-				testCase.help.Run(model.MockDataSet)
+				testCase.help.Run(model.GetMockDataSet())
 			})
 
 			assert.Contains(t, output, testCase.expected)

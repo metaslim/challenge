@@ -56,7 +56,7 @@ func TestUserDecorate(t *testing.T) {
 	for _, testCase := range testCases {
 		testCase := testCase
 		t.Run(testCase.desc, func(t *testing.T) {
-			testCase.userSearchResult.Decorate(MockDataSet)
+			testCase.userSearchResult.Decorate(GetMockDataSet())
 			assert.Equal(t, testCase.expected[0], testCase.userSearchResult.Items[0].Organization.ID)
 			assert.Equal(t, testCase.expected[1], len(testCase.userSearchResult.Items[0].SubmittedTickets))
 			assert.Equal(t, testCase.expected[2], len(testCase.userSearchResult.Items[0].AssignedTickets))
