@@ -44,7 +44,6 @@ func loadAll() (model.Organizations, model.Users, model.Tickets, error) {
 		err = fmt.Errorf("[%v, %v, %v]", errOrganization, errUsers, errTickets)
 	}
 
-	fmt.Println("abc")
 	return organizations, users, tickets, err
 }
 
@@ -129,6 +128,7 @@ func PrepareCommand() []command.Action {
 	commands := []command.Action{}
 
 	commands = append(commands, &command.Help{})
+	commands = append(commands, &command.Describe{})
 	commands = append(commands, &command.Search{Presenter: presenter.Json{}})
 
 	return commands

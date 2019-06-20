@@ -25,8 +25,15 @@ func (action Help) Valid() bool {
 
 //Run will be executed for help command
 func (action Help) Run(dataSet model.DataSet) {
+	fmt.Println("\n=============================================================================================")
 	fmt.Println("Sample commands")
-	fmt.Println("`search-organizations:tags=West` will return for organizations who has West in thier Tags")
-	fmt.Println("`search-users:alias=Miss Coffey` will return for users whose alias is Miss Coffey")
-	fmt.Println("`search-tickets:status=pending` will return for tickets are pending status")
+	fmt.Println("describe")
+	fmt.Println("\t`describe-organizations` will return search fields for organizations")
+	fmt.Println("\t`describe-users` will return search fields for users")
+	fmt.Println("\t`describe-tickets` will return search fields for tickets")
+	fmt.Println("search")
+	fmt.Println("\t`search-organizations:tags=West` will return any organizations who has West in thier Tags")
+	fmt.Println("\t`search-users:alias=Miss Coffey` will return any users whose alias is Miss Coffey")
+	fmt.Println("\t`search-tickets:status=pending` will return any tickets with pending status")
+	fmt.Println("=============================================================================================\n")
 }

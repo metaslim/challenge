@@ -9,7 +9,7 @@ import (
 	"github.com/metaslim/challenge/lib/model"
 )
 
-var _ Action = (*Help)(nil)
+var _ Action = (*Search)(nil)
 
 //Search is action struct to give ability to search data
 type Search struct {
