@@ -14,6 +14,7 @@ var _ SearchResult = (*TicketSearchResult)(nil)
 //Tickets will contains Ticket data source
 type Tickets struct {
 	Items []schema.Ticket
+	BaseRecords
 }
 
 //TicketSearchResult will contain Ticket search result
@@ -48,7 +49,12 @@ func (ticketSearchResult TicketSearchResult) Decorate(dataSet DataSet) {
 
 //Populate will load data from data source such as json
 func (tickets *Tickets) Populate(jsonLoader loader.JSONLoader) error {
-	return load(jsonLoader, &tickets.Items)
+	err := load(jsonLoader, &tickets.Items)
+	if err != nil {
+		return err
+	}
+	tickets.Size = len(tickets.Items)
+	return nil
 }
 
 //Search will allow data source to be searched

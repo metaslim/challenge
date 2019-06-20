@@ -14,6 +14,7 @@ var _ SearchResult = (*UserSearchResult)(nil)
 //Users will contains User data source
 type Users struct {
 	Items []schema.User
+	BaseRecords
 }
 
 //UserSearchResult will contain User search result
@@ -47,7 +48,12 @@ func (userSearchResult UserSearchResult) Decorate(dataSet DataSet) {
 
 //Populate will load data from data source such as json
 func (users *Users) Populate(jsonLoader loader.JSONLoader) error {
-	return load(jsonLoader, &users.Items)
+	err := load(jsonLoader, &users.Items)
+	if err != nil {
+		return err
+	}
+	users.Size = len(users.Items)
+	return nil
 }
 
 //Search will allow data source to be searched

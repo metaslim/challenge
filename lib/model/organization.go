@@ -14,6 +14,7 @@ var _ SearchResult = (*OrganizationSearchResult)(nil)
 //Organizations will contain Organization data source
 type Organizations struct {
 	Items []schema.Organization
+	BaseRecords
 }
 
 //OrganizationSearchResult will contain Organization search result
@@ -41,7 +42,12 @@ func (organizationsSearchResult OrganizationSearchResult) Decorate(dataSet DataS
 
 //Populate will load data from data source such as json
 func (organizations *Organizations) Populate(jsonLoader loader.JSONLoader) error {
-	return load(jsonLoader, &organizations.Items)
+	err := load(jsonLoader, &organizations.Items)
+	if err != nil {
+		return err
+	}
+	organizations.Size = len(organizations.Items)
+	return nil
 }
 
 //Search will allow data source to be searched

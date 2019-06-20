@@ -12,13 +12,18 @@ type Records interface {
 	Search(string, string) SearchResult
 }
 
+//BaseRecords is Records base struct that store number of records
+type BaseRecords struct {
+	Size int
+}
+
 //SearchResult is an interface that will allow object to be decorated
 type SearchResult interface {
 	Decorate(DataSet)
 	GetSize() int
 }
 
-//BaseSearchResult is SearchResult base struct that store number of records
+//BaseSearchResult is SearchResult base struct that store number of search result records
 type BaseSearchResult struct {
 	Size int `json:"number_of_result,omitempty"`
 }
