@@ -54,7 +54,7 @@ var MockTicketSearchResult = TicketSearchResult{
 			CreatedAt:      "2016-05-21T11:10:28 -10:00",
 			TicketType:     "incident",
 			Subject:        "Thanos attack",
-			Description:    "Thanos attack, Infinity Wars",
+			Description:    "",
 			Priority:       "high",
 			Status:         "pending",
 			SubmitterID:    1,

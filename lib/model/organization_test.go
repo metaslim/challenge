@@ -15,11 +15,18 @@ func TestOrganizationsSearch(t *testing.T) {
 		expected      int
 	}{
 		{
-			desc:          "return true for correct describe command for organizations",
+			desc:          "return 1 organization with _id=1",
 			organizations: MockOrganizations,
 			searchKey:     "_id",
 			searchTerm:    "1",
 			expected:      1,
+		},
+		{
+			desc:          "return 2 organizations with shared_tickets=true",
+			organizations: MockOrganizations,
+			searchKey:     "shared_tickets",
+			searchTerm:    "true",
+			expected:      2,
 		},
 	}
 

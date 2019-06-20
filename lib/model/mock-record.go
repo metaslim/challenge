@@ -53,8 +53,8 @@ var MockTickets = Tickets{
 			ExternalID:     "external-id-1",
 			CreatedAt:      "2016-05-21T11:10:28 -10:00",
 			TicketType:     "incident",
-			Subject:        "Thanos attack",
-			Description:    "Thanos attack, Infinity Wars",
+			Subject:        "Thanos attack, Infinity Wars",
+			Description:    "",
 			Priority:       "high",
 			Status:         "pending",
 			SubmitterID:    1,
@@ -113,6 +113,7 @@ var MockUsers = Users{
 			OrganizationID: 1,
 			Tags: []string{
 				"nickfury",
+				"heroes",
 			},
 			Suspended: false,
 			Role:      "admin",
@@ -136,6 +137,7 @@ var MockUsers = Users{
 			OrganizationID: 2,
 			Tags: []string{
 				"steverogers",
+				"heroes",
 			},
 			Suspended: false,
 			Role:      "admin",
