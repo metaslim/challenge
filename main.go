@@ -29,7 +29,11 @@ func main() {
 
 	for input != "quit" {
 		for _, command := range commands {
-			command.Run(input, decorateParams)
+			command.SetInput(input)
+			if command.Valid() {
+				command.Run(decorateParams)
+				break
+			}
 		}
 		input = util.ReadInput(reader)
 	}
