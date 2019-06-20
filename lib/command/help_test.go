@@ -1,0 +1,71 @@
+package command
+
+import (
+	"testing"
+
+	"github.com/metaslim/challenge/lib/mocks"
+	"github.com/stretchr/testify/assert"
+)
+
+func TestHelpValid(t *testing.T) {
+	testCases := []struct {
+		desc     string
+		help     Help
+		expected bool
+	}{
+		{
+			desc: "return true for correct help command",
+			help: Help{
+				BaseCommand: BaseCommand{
+					Input: "help",
+				},
+			},
+			expected: true,
+		},
+		{
+			desc: "return true for correct describe command for users",
+			help: Help{
+				BaseCommand: BaseCommand{
+					Input: "unknown-help",
+				},
+			},
+			expected: false,
+		},
+	}
+
+	for _, testCase := range testCases {
+		testCase := testCase
+		t.Run(testCase.desc, func(t *testing.T) {
+			valid := testCase.help.Valid()
+
+			assert.Equal(t, testCase.expected, valid)
+		})
+	}
+}
+
+func TestHelpRun(t *testing.T) {
+	testCases := []struct {
+		desc     string
+		help     Help
+		expected string
+	}{
+		{
+			desc:     "return help message",
+			help:     Help{},
+			expected: "Sample commands",
+		},
+	}
+
+	for _, testCase := range testCases {
+		testCase := testCase
+		t.Run(testCase.desc, func(t *testing.T) {
+			testCase.help.Valid()
+
+			output := captureOutput(func() {
+				testCase.help.Run(mocks.MockDataSet)
+			})
+
+			assert.Contains(t, output, testCase.expected)
+		})
+	}
+}

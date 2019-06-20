@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestValid(t *testing.T) {
+func TestDescribeValid(t *testing.T) {
 	testCases := []struct {
 		desc     string
 		describe Describe
@@ -63,7 +63,7 @@ func TestValid(t *testing.T) {
 	}
 }
 
-func TestRun(t *testing.T) {
+func TestDescribeRun(t *testing.T) {
 	testCases := []struct {
 		desc     string
 		describe Describe
