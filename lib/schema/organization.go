@@ -11,6 +11,6 @@ type Organization struct {
 	Details       string   `json:"details"`
 	SharedTickets bool     `json:"shared_tickets"`
 	Tags          []string `json:"tags"`
-	Tickets       []Ticket `json:"tickets,omitempty"`
-	Users         []User   `json:"users,omitempty"`
+	Tickets       []string `json:"tickets"`
+	Users         []string `json:"users"`
 }

@@ -16,9 +16,6 @@ type Json struct{}
 //Flush will output the data
 func (output Json) Flush(data model.SearchResult) {
 	byteOutput, _ := json.MarshalIndent(data, "", "  ")
-	fmt.Println(len(byteOutput))
-	fmt.Println(len(pretty.Color(byteOutput, nil)))
 	jsonString := string(pretty.Color(byteOutput, nil))
-
 	fmt.Println(jsonString)
 }

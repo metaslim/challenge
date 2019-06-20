@@ -44,12 +44,12 @@ func TestTicketDecorate(t *testing.T) {
 	testCases := []struct {
 		desc               string
 		ticketSearchResult TicketSearchResult
-		expected           []int
+		expected           []string
 	}{
 		{
 			desc:               "Ticket result is decorated succesfully, its Submitter, Assignee, and Organization is not nil",
 			ticketSearchResult: GetMockTicketSearchResult(),
-			expected:           []int{1, 2, 1, 2, 1, 2},
+			expected:           []string{"Nick Fury", "Steve Rogers", "Shield", "Steve Rogers", "Nick Fury", "Avengers"},
 		},
 	}
 
@@ -57,12 +57,12 @@ func TestTicketDecorate(t *testing.T) {
 		testCase := testCase
 		t.Run(testCase.desc, func(t *testing.T) {
 			testCase.ticketSearchResult.Decorate(GetMockDataSet())
-			assert.Equal(t, testCase.expected[0], testCase.ticketSearchResult.Items[0].Submitter.ID)
-			assert.Equal(t, testCase.expected[1], testCase.ticketSearchResult.Items[0].Assignee.ID)
-			assert.Equal(t, testCase.expected[2], testCase.ticketSearchResult.Items[0].Organization.ID)
-			assert.Equal(t, testCase.expected[3], testCase.ticketSearchResult.Items[1].Submitter.ID)
-			assert.Equal(t, testCase.expected[4], testCase.ticketSearchResult.Items[1].Assignee.ID)
-			assert.Equal(t, testCase.expected[5], testCase.ticketSearchResult.Items[1].Organization.ID)
+			assert.Equal(t, testCase.expected[0], testCase.ticketSearchResult.Items[0].SubmitterName)
+			assert.Equal(t, testCase.expected[1], testCase.ticketSearchResult.Items[0].AssigneeName)
+			assert.Equal(t, testCase.expected[2], testCase.ticketSearchResult.Items[0].OrganizationName)
+			assert.Equal(t, testCase.expected[3], testCase.ticketSearchResult.Items[1].SubmitterName)
+			assert.Equal(t, testCase.expected[4], testCase.ticketSearchResult.Items[1].AssigneeName)
+			assert.Equal(t, testCase.expected[5], testCase.ticketSearchResult.Items[1].OrganizationName)
 		})
 	}
 }

@@ -44,12 +44,12 @@ func TestUserDecorate(t *testing.T) {
 	testCases := []struct {
 		desc             string
 		userSearchResult UserSearchResult
-		expected         []int
+		expected         []string
 	}{
 		{
 			desc:             "User result is decorated succesfully, its number of SubmSubmittedTickets, AssignedTickets  is 1 and Organization is not nil",
 			userSearchResult: GetMockUserSearchResult(),
-			expected:         []int{1, 1, 1, 2, 1, 1},
+			expected:         []string{"Shield", "Thanos attack, Infinity Wars", "Loki attack", "Shield", "Thanos attack, Infinity Wars", "Loki attack"},
 		},
 	}
 
@@ -57,12 +57,12 @@ func TestUserDecorate(t *testing.T) {
 		testCase := testCase
 		t.Run(testCase.desc, func(t *testing.T) {
 			testCase.userSearchResult.Decorate(GetMockDataSet())
-			assert.Equal(t, testCase.expected[0], testCase.userSearchResult.Items[0].Organization.ID)
-			assert.Equal(t, testCase.expected[1], len(testCase.userSearchResult.Items[0].SubmittedTickets))
-			assert.Equal(t, testCase.expected[2], len(testCase.userSearchResult.Items[0].AssignedTickets))
-			assert.Equal(t, testCase.expected[0], testCase.userSearchResult.Items[0].Organization.ID)
-			assert.Equal(t, testCase.expected[1], len(testCase.userSearchResult.Items[0].SubmittedTickets))
-			assert.Equal(t, testCase.expected[2], len(testCase.userSearchResult.Items[0].AssignedTickets))
+			assert.Equal(t, testCase.expected[0], testCase.userSearchResult.Items[0].OrganizationName)
+			assert.Contains(t, testCase.userSearchResult.Items[0].SubmittedTickets, testCase.expected[1])
+			assert.Contains(t, testCase.userSearchResult.Items[0].AssignedTickets, testCase.expected[2])
+			assert.Equal(t, testCase.expected[0], testCase.userSearchResult.Items[0].OrganizationName)
+			assert.Contains(t, testCase.userSearchResult.Items[0].SubmittedTickets, testCase.expected[1])
+			assert.Contains(t, testCase.userSearchResult.Items[0].AssignedTickets, testCase.expected[2])
 		})
 	}
 }

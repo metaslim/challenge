@@ -28,13 +28,13 @@ func (organizationsSearchResult OrganizationSearchResult) Decorate(dataSet DataS
 	for key, _ := range organizationsSearchResult.Items {
 		for _, ticket := range dataSet.Tickets.Items {
 			if organizationsSearchResult.Items[key].ID == ticket.OrganizationID {
-				organizationsSearchResult.Items[key].Tickets = append(organizationsSearchResult.Items[key].Tickets, ticket)
+				organizationsSearchResult.Items[key].Tickets = append(organizationsSearchResult.Items[key].Tickets, ticket.Subject)
 			}
 		}
 
 		for _, user := range dataSet.Users.Items {
 			if organizationsSearchResult.Items[key].ID == user.OrganizationID {
-				organizationsSearchResult.Items[key].Users = append(organizationsSearchResult.Items[key].Users, user)
+				organizationsSearchResult.Items[key].Users = append(organizationsSearchResult.Items[key].Users, user.Name)
 			}
 		}
 	}

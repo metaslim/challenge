@@ -28,18 +28,17 @@ func (userSearchResult UserSearchResult) Decorate(dataSet DataSet) {
 	for key, _ := range userSearchResult.Items {
 		for _, organization := range dataSet.Organizations.Items {
 			if userSearchResult.Items[key].OrganizationID == organization.ID {
-				matched_organization := organization
-				userSearchResult.Items[key].Organization = &matched_organization
+				userSearchResult.Items[key].OrganizationName = organization.Name
 			}
 		}
 
 		for _, ticket := range dataSet.Tickets.Items {
 			if userSearchResult.Items[key].ID == ticket.SubmitterID {
-				userSearchResult.Items[key].SubmittedTickets = append(userSearchResult.Items[key].SubmittedTickets, ticket)
+				userSearchResult.Items[key].SubmittedTickets = append(userSearchResult.Items[key].SubmittedTickets, ticket.Subject)
 			}
 
 			if userSearchResult.Items[key].ID == ticket.AssigneeID {
-				userSearchResult.Items[key].AssignedTickets = append(userSearchResult.Items[key].AssignedTickets, ticket)
+				userSearchResult.Items[key].AssignedTickets = append(userSearchResult.Items[key].AssignedTickets, ticket.Subject)
 			}
 		}
 
