@@ -77,7 +77,7 @@ var MockTickets = model.Tickets{
 			Subject:        "Loki attack",
 			Description:    "Loki attack, Puny God",
 			Priority:       "low",
-			Status:         "pending",
+			Status:         "solved",
 			SubmitterID:    2,
 			AssigneeID:     1,
 			OrganizationID: 2,
