@@ -7,6 +7,7 @@ import (
 	"github.com/metaslim/challenge/lib/command"
 	"github.com/metaslim/challenge/lib/loader"
 	"github.com/metaslim/challenge/lib/model"
+	"github.com/metaslim/challenge/lib/presenter"
 )
 
 func loadAll() (model.Organizations, model.Users, model.Tickets, error) {
@@ -122,7 +123,7 @@ func PrepareCommand() []command.Action {
 	commands := []command.Action{}
 
 	commands = append(commands, &command.Help{})
-	commands = append(commands, &command.Search{})
+	commands = append(commands, &command.Search{Presenter: presenter.Json{}})
 
 	return commands
 }

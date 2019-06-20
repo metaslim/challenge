@@ -1,9 +1,10 @@
 package command
 
 import (
-	"encoding/json"
 	"fmt"
 	"regexp"
+
+	"github.com/metaslim/challenge/lib/presenter"
 
 	"github.com/metaslim/challenge/lib/model"
 )
@@ -12,7 +13,8 @@ var _ Action = (*Help)(nil)
 
 type Search struct {
 	Base
-	regex *regexp.Regexp
+	regex     *regexp.Regexp
+	Presenter presenter.Output
 }
 
 func (action *Search) Valid() bool {
@@ -50,12 +52,6 @@ func (action Search) Run(params model.DecorateParams) {
 
 	result.Decorate(params)
 
-	byteOutput, err := json.MarshalIndent(result, "", "  ")
+	action.Presenter.Flush(result)
 
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-
-	fmt.Println(string(byteOutput))
 }
