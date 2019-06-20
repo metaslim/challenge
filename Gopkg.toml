@@ -28,4 +28,13 @@
 [[constraint]]
   name = "github.com/stretchr/testify"
   branch="master"
+
+[[constraint]]
+  name = "github.com/tidwall/pretty"
+  branch="master"
+
+[[constraint]]
+  name = "github.com/acarl005/stripansi"
+  branch="master"
+  
   

@@ -5,6 +5,7 @@ import (
 	"fmt"
 
 	"github.com/metaslim/challenge/lib/model"
+	"github.com/tidwall/pretty"
 )
 
 var _ Output = (*Json)(nil)
@@ -15,5 +16,9 @@ type Json struct{}
 //Flush will output the data
 func (output Json) Flush(data model.SearchResult) {
 	byteOutput, _ := json.MarshalIndent(data, "", "  ")
-	fmt.Println(string(byteOutput))
+	fmt.Println(len(byteOutput))
+	fmt.Println(len(pretty.Color(byteOutput, nil)))
+	jsonString := string(pretty.Color(byteOutput, nil))
+
+	fmt.Println(jsonString)
 }

@@ -3,6 +3,7 @@ package command
 import (
 	"testing"
 
+	"github.com/acarl005/stripansi"
 	"github.com/metaslim/challenge/lib/model"
 	"github.com/metaslim/challenge/lib/presenter"
 	"github.com/metaslim/challenge/lib/util"
@@ -63,7 +64,7 @@ func TestSearchValid(t *testing.T) {
 	}
 }
 
-func TestSearcheRun(t *testing.T) {
+func TestSearchRun(t *testing.T) {
 	testCases := []struct {
 		desc     string
 		search   Search
@@ -140,7 +141,7 @@ func TestSearcheRun(t *testing.T) {
 				testCase.search.Run(model.GetMockDataSet())
 			})
 
-			assert.Contains(t, output, testCase.expected)
+			assert.Contains(t, stripansi.Strip(output), testCase.expected)
 		})
 	}
 }

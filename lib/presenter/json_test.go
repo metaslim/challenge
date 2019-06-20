@@ -3,6 +3,7 @@ package presenter
 import (
 	"testing"
 
+	"github.com/acarl005/stripansi"
 	"github.com/metaslim/challenge/lib/model"
 	"github.com/metaslim/challenge/lib/util"
 	"github.com/stretchr/testify/assert"
@@ -30,7 +31,7 @@ func TestOrganizationSearchResultFlush(t *testing.T) {
 				testCase.json.Flush(testCase.organizationSearchResult)
 			})
 
-			assert.Contains(t, output, testCase.expected)
+			assert.Contains(t, stripansi.Strip(output), testCase.expected)
 
 		})
 	}
@@ -58,7 +59,7 @@ func TestUserSearchResultFlush(t *testing.T) {
 				testCase.json.Flush(testCase.userSearchResult)
 			})
 
-			assert.Contains(t, output, testCase.expected)
+			assert.Contains(t, stripansi.Strip(output), testCase.expected)
 
 		})
 	}
@@ -86,7 +87,7 @@ func TestTicketSearchResultFlush(t *testing.T) {
 				testCase.json.Flush(testCase.ticketSearchResult)
 			})
 
-			assert.Contains(t, output, testCase.expected)
+			assert.Contains(t, stripansi.Strip(output), testCase.expected)
 
 		})
 	}
