@@ -1,5 +1,25 @@
 # Simple Code Challenge
 
+## How it looks like
+
+#### Main Menu
+![](menu.png)
+
+#### Help
+![](help.png)
+
+#### Display Search Field
+![](field.png)
+
+#### Search and display in compact table
+![](table.png)
+
+#### Search and display in json
+![](json.png)
+
+#### Quit
+![](quit.png)
+
 ## Setting up locally
 
 #### Install Dependencies
