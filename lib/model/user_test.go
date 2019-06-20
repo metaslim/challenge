@@ -48,7 +48,7 @@ func TestUserDecorate(t *testing.T) {
 	}{
 		{
 			desc:             "User result is decorated succesfully, its number of SubmSubmittedTickets, AssignedTickets  is 1 and Organization is not nil",
-			userSearchResult: MockUserSearchResult,
+			userSearchResult: GetMockUserSearchResult(),
 			expected:         []int{1, 1, 1, 2, 1, 1},
 		},
 	}

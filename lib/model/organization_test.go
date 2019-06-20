@@ -48,7 +48,7 @@ func TestOrganizationDecorate(t *testing.T) {
 	}{
 		{
 			desc:                     "Organization result is decorated succesfully, its number of users and tickets is 1 not 0",
-			organizationSearchResult: MockOrganizationSearchResult,
+			organizationSearchResult: GetMockOrganizationSearchResult(),
 			expected:                 []int{1, 1, 1, 1},
 		},
 	}

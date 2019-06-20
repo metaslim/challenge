@@ -18,7 +18,7 @@ func TestOrganizationSearchResultFlush(t *testing.T) {
 		{
 			desc:                     "Json Presenter is able to parse the organization search result",
 			json:                     Json{},
-			organizationSearchResult: model.MockOrganizationSearchResult,
+			organizationSearchResult: model.GetMockOrganizationSearchResult(),
 			expected:                 `"details": "Avengers"`,
 		},
 	}
@@ -46,7 +46,7 @@ func TestUserSearchResultFlush(t *testing.T) {
 		{
 			desc:             "Json Presenter is able to parse the user search result",
 			json:             Json{},
-			userSearchResult: model.MockUserSearchResult,
+			userSearchResult: model.GetMockUserSearchResult(),
 			expected:         `"signature": "I still believe in heroes"`,
 		},
 	}
@@ -74,7 +74,7 @@ func TestTicketSearchResultFlush(t *testing.T) {
 		{
 			desc:               "Json Presenter is able to parse the ticket search result",
 			json:               Json{},
-			ticketSearchResult: model.MockTicketSearchResult,
+			ticketSearchResult: model.GetMockTicketSearchResult(),
 			expected:           `"subject": "Thanos attack"`,
 		},
 	}
