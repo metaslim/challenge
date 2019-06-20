@@ -10,7 +10,7 @@ var _ Action = (*Help)(nil)
 
 //Help is action struct to return help message
 type Help struct {
-	Base
+	BaseCommand
 	name string
 }
 

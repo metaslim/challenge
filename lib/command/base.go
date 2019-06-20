@@ -11,12 +11,12 @@ type Action interface {
 	Run(model.DataSet)
 }
 
-//Base is action base struct that store command from user
-type Base struct {
+//BaseCommand is action base struct that store command from user
+type BaseCommand struct {
 	Input string
 }
 
 //SetInput is will save user commnad to be consumed by object who embed base
-func (action *Base) SetInput(command string) {
+func (action *BaseCommand) SetInput(command string) {
 	(*action).Input = command
 }

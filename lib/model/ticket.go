@@ -13,14 +13,14 @@ var _ SearchResult = (*TicketSearchResult)(nil)
 
 //Tickets will contains Ticket data source
 type Tickets struct {
-	Items []schema.Ticket
 	BaseRecords
+	Items []schema.Ticket
 }
 
 //TicketSearchResult will contain Ticket search result
 type TicketSearchResult struct {
-	Items []schema.Ticket
 	BaseSearchResult
+	Items []schema.Ticket
 }
 
 //Decorate will decorate the search result, in this case it will populate Submitter, Assignee, and Organization properties

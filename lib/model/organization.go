@@ -13,14 +13,14 @@ var _ SearchResult = (*OrganizationSearchResult)(nil)
 
 //Organizations will contain Organization data source
 type Organizations struct {
-	Items []schema.Organization
 	BaseRecords
+	Items []schema.Organization
 }
 
 //OrganizationSearchResult will contain Organization search result
 type OrganizationSearchResult struct {
-	Items []schema.Organization
 	BaseSearchResult
+	Items []schema.Organization
 }
 
 //Decorate will decorate the search result, in this case it will populate Tickets and Users properties
@@ -53,7 +53,6 @@ func (organizations *Organizations) Populate(jsonLoader loader.JSONLoader) error
 //Search will allow data source to be searched
 func (organizations *Organizations) Search(searchKey string, searchTerm string) SearchResult {
 	results := OrganizationSearchResult{}
-
 	for _, organization := range organizations.Items {
 		val := reflect.ValueOf(&organization).Elem()
 		for i := 0; i < val.NumField(); i++ {

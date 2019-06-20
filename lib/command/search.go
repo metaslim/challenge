@@ -13,7 +13,7 @@ var _ Action = (*Help)(nil)
 
 //Search is action struct to give ability to search data
 type Search struct {
-	Base
+	BaseCommand
 	regex     *regexp.Regexp
 	Presenter presenter.Output
 }

@@ -17,6 +17,11 @@ type BaseRecords struct {
 	Size int
 }
 
+//GetSize will return record size
+func (baseRecords BaseRecords) GetSize() int {
+	return baseRecords.Size
+}
+
 //SearchResult is an interface that will allow object to be decorated
 type SearchResult interface {
 	Decorate(DataSet)

@@ -13,14 +13,14 @@ var _ SearchResult = (*UserSearchResult)(nil)
 
 //Users will contains User data source
 type Users struct {
-	Items []schema.User
 	BaseRecords
+	Items []schema.User
 }
 
 //UserSearchResult will contain User search result
 type UserSearchResult struct {
-	Items []schema.User
 	BaseSearchResult
+	Items []schema.User
 }
 
 //Decorate will decorate the search result, in this case it will populate Organization, SubmittedTicket, and AssignedTicket properties
