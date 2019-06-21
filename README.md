@@ -4,7 +4,7 @@ Currently this app is using Go internal library (encoding/json) which uses refle
 
 ## Environment
 
-Go 1.12.3
+Go 1.12
 
 ## Setting up locally
 
