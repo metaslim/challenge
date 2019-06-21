@@ -46,7 +46,7 @@ func (action Describe) Run(dataSet model.DataSet) {
 		val = reflect.ValueOf(&dataSet.Tickets.Items[0]).Elem()
 	}
 
-	regex, _ := regexp.Compile(`^(?i)json:"(\w+)"$`)
+	regex, _ := regexp.Compile(`^(?i)json:"(\w+)".*?search:"yes"$`)
 
 	fmt.Printf("\n%s can be searched by any fields below\n", describeEngine)
 	fmt.Println("================================================")
