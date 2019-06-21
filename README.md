@@ -37,23 +37,22 @@ $ make test
 
 ```
 
-## How to run without compiling
-
-```sh
-$ make run
-```
-
 ## How to build binary
 
 ```sh
 $ make build
 ```
 
-
 ## How to run binary
 
 ```sh
 $ ./challenge
+```
+
+## How to run without compiling (slower compared to run binary)
+
+```sh
+$ make run
 ```
 
 ### Main Menu
