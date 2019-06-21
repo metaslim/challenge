@@ -10,7 +10,7 @@ $ export GOPATH=/Users/someone/Development/gocode
 $ export PATH=$GOPATH/bin:$PATH
 $ echo $GOPATH
 /Users/someone/Development/gocode
-$ go get go get github.com/metaslim/challenge
+$ go get github.com/metaslim/challenge
 $ cd $GOPATH/src/github.com/metaslim/challenge
 $ pwd
 /Users/someone/Development/gocode/src/github.com/metaslim/challenge
@@ -19,8 +19,6 @@ On branch master
 Your branch is up to date with 'origin/master'.
 
 nothing to commit, working tree clean
-$ ls
-Gopkg.lock Gopkg.toml Makefile   README.md  config     data       field.png  help.png   json.png   lib        main.go    menu.png   quit.png   table.png  vendor
 ```
 
 #### Install Dependencies
