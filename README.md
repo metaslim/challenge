@@ -24,6 +24,8 @@
 
 #### GOPATH and location of the code
 ```
+$ export GOPATH=/Users/someone/Development/gocode
+$ export PATH=$GOPATH/bin:$PATH
 $ echo $GOPATH
 /Users/someone/Development/gocode
 $ pwd
