@@ -3,22 +3,22 @@
 ## How it looks like
 
 #### Main Menu
-![](menu.png)
+![Search menu](search-menu.png)
 
-#### Help
-![](help.png)
+#### Get Help
+![Help](search-help.png)
 
 #### Display Search Field
-![](field.png)
+![Display search field](search-field.png)
 
 #### Search and display in compact table
-![](table.png)
+![Display search result in compact table](search-table.png)
 
 #### Search and display in json
-![](json.png)
+![Display search result in colored json](search-json.png)
 
-#### Quit
-![](quit.png)
+#### Exit
+![Quit](search-quit.png)
 
 ## Setting up locally
 
