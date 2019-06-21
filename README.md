@@ -56,19 +56,19 @@ $ make run
 ```
 
 ### Main Menu
-![Search menu](search-menu.png)
+![Search menu](image-menu.png)
 
 ### Get Help
-![Help](search-help.png)
+![Help](image-help.png)
 
 ### Display Search Field
-![Display search field](search-field.png)
+![Display search field](image-field.png)
 
 ### Search and display in compact table
-![Display search result in compact table](search-table.png)
+![Display search result in compact table](image-table.png)
 
 ### Search and display in json
-![Display search result in colored json](search-json.png)
+![Display search result in colored json](image-json.png)
 
 ### Exit
-![Quit](search-quit.png)
+![Quit](image-quit.png)
