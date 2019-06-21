@@ -25,12 +25,11 @@ func main() {
 
 	commands := setup.PrepareCommand()
 
-	fmt.Println("Enter Command:")
 	fmt.Println("==================================")
 	fmt.Println("\t`quit` to exit")
 	fmt.Println("\t`help` to get help")
 	fmt.Println("==================================")
-
+	fmt.Printf("<Command> ➜ ")
 	reader := bufio.NewReader(os.Stdin)
 	input := util.ReadInput(reader)
 
@@ -42,6 +41,7 @@ func main() {
 				break
 			}
 		}
+		fmt.Printf("<Command> ➜ ")
 		input = util.ReadInput(reader)
 	}
 
