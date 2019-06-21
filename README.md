@@ -27,20 +27,33 @@ nothing to commit, working tree clean
 
 ### Install Dependencies
 ```sh
-make install
+$ make install
 ```
 
 ## How to run tests
 
 ```sh
-make test
+$ make test
 
 ```
 
-## How to run
+## How to run without compiling
 
 ```sh
-make run
+$ make run
+```
+
+## How to build binary
+
+```sh
+$ make build
+```
+
+
+## How to run binary
+
+```sh
+$ ./challenge
 ```
 
 ### Main Menu
