@@ -1,6 +1,6 @@
 # Simple Code Challenge
 
-Currently this app is using Go internal library (encoding/json) which use reflection. In the future json file parsing can be improved by using https://github.com/mailru/easyjson (without reflection).
+Currently this app is using Go internal library (encoding/json) which uses reflection. This can be improved by using library which does not use reflection such as easyjson (https://github.com/mailru/easyjson).
 
 ## Setting up locally
 
@@ -58,21 +58,3 @@ make run
 
 ##### Exit
 ![Quit](search-quit.png)
-
-#### Command
-```
-"quit" to exit
-"help" to get help
-
-"describe-organizations" will return search fields for organizations
-"describe-users" will return search fields for users
-"describe-tickets" will return search fields for tickets
-
-"table-organizations:tags=West" will return any organizations who has West in their Tags in compact table
-"table-users:alias=Miss Coffey" will return any users whose alias is Miss Coffey in compact table
-"table-tickets:status=pending" will return any tickets with pending status  in compact table
-
-"search-organizations:tags=West" will return any organizations who has West in their Tags
-"search-users:alias=Miss Coffey" will return any users whose alias is Miss Coffey
-"search-tickets:status=pending" will return any tickets with pending status
-```
