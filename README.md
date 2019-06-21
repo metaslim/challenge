@@ -2,9 +2,13 @@
 
 Currently this app is using Go internal library (encoding/json) which uses reflection. This can be improved by using library which does not use reflection such as easyjson (https://github.com/mailru/easyjson).
 
+## Environment
+
+Go 1.12.3
+
 ## Setting up locally
 
-#### GOPATH and installing the code
+### GOPATH and installing the code
 ```
 $ export GOPATH=/Users/someone/Development/gocode
 $ export PATH=$GOPATH/bin:$PATH
@@ -21,38 +25,38 @@ Your branch is up to date with 'origin/master'.
 nothing to commit, working tree clean
 ```
 
-#### Install Dependencies
+### Install Dependencies
 ```sh
 make install
 ```
 
-#### Run Tests
+## How to run tests
+
 ```sh
 make test
 
 ```
 
-#### Run App
+## How to run
+
 ```sh
 make run
 ```
 
-#### How it looks like
-
-##### Main Menu
+### Main Menu
 ![Search menu](search-menu.png)
 
-##### Get Help
+### Get Help
 ![Help](search-help.png)
 
-##### Display Search Field
+### Display Search Field
 ![Display search field](search-field.png)
 
-##### Search and display in compact table
+### Search and display in compact table
 ![Display search result in compact table](search-table.png)
 
-##### Search and display in json
+### Search and display in json
 ![Display search result in colored json](search-json.png)
 
-##### Exit
+### Exit
 ![Quit](search-quit.png)
