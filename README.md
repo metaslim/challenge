@@ -10,14 +10,10 @@ Go 1.12
 
 ### GOPATH and installing the code
 ```
-$ export GOPATH=/Users/someone/Development/gocode
-$ export PATH=$GOPATH/bin:$PATH
-$ echo $GOPATH
-/Users/someone/Development/gocode
+$ mkdir -p $HOME/Development/gocode
+$ export GOPATH=$HOME/Development/gocode
 $ go get github.com/metaslim/challenge
 $ cd $GOPATH/src/github.com/metaslim/challenge
-$ pwd
-/Users/someone/Development/gocode/src/github.com/metaslim/challenge
 $ git status
 On branch master
 Your branch is up to date with 'origin/master'.

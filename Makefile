@@ -1,5 +1,5 @@
 install:
-	@dep ensure
+	@dep ensure -v
 	
 run:
 	@go run main.go
