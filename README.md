@@ -30,6 +30,11 @@ $ echo $GOPATH
 /Users/someone/Development/gocode
 $ pwd
 /Users/someone/Development/gocode/src/github.com/metaslim/challenge
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
 $ ls
 Gopkg.lock Gopkg.toml Makefile   README.md  config     data       field.png  help.png   json.png   lib        main.go    menu.png   quit.png   table.png  vendor
 ```
