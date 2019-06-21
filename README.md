@@ -27,7 +27,7 @@
 $ echo $GOPATH
 /Users/someone/Development/gocode
 $ pwd
-/Users/welly/Development/gocode/src/github.com/metaslim/challenge
+/Users/someone/Development/gocode/src/github.com/metaslim/challenge
 $ ls
 Gopkg.lock Gopkg.toml Makefile   README.md  config     data       field.png  help.png   json.png   lib        main.go    menu.png   quit.png   table.png  vendor
 ```
