@@ -41,7 +41,7 @@
   name = "github.com/landoop/tableprinter"
   branch="master"
 
-[[constraint]]
+[[override]]
   name = "github.com/landoop/tablewriter"
   branch="master"
   

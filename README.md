@@ -28,6 +28,8 @@ $ export GOPATH=/Users/someone/Development/gocode
 $ export PATH=$GOPATH/bin:$PATH
 $ echo $GOPATH
 /Users/someone/Development/gocode
+$ go get go get github.com/metaslim/challenge
+$ cd $GOPATH/src/github.com/metaslim/challenge
 $ pwd
 /Users/someone/Development/gocode/src/github.com/metaslim/challenge
 $ git status
