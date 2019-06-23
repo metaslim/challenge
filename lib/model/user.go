@@ -20,7 +20,7 @@ type Users struct {
 //UserSearchResult will contain User search result
 type UserSearchResult struct {
 	BaseSearchResult
-	Items []schema.User
+	Items []schema.User `json:"search_result"`
 }
 
 //Decorate will decorate the search result, in this case it will populate Organization, SubmittedTicket, and AssignedTicket properties

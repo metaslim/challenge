@@ -20,7 +20,7 @@ type Tickets struct {
 //TicketSearchResult will contain Ticket search result
 type TicketSearchResult struct {
 	BaseSearchResult
-	Items []schema.Ticket
+	Items []schema.Ticket `json:"search_result"`
 }
 
 //Decorate will decorate the search result, in this case it will populate Submitter, Assignee, and Organization properties
