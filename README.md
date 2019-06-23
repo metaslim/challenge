@@ -1,6 +1,6 @@
 # Simple Code Challenge
 
-Currently this app is using Go internal library (encoding/json) which uses reflection. This can be improved by using library which does not use reflection such as easyjson (https://github.com/mailru/easyjson).
+Currently this app is using Go internal library (encoding/json) which uses reflection. This can be improved by using library which does not use reflection such as easyjson (https://github.com/mailru/easyjson). 
 
 ## Environment
 
@@ -15,6 +15,8 @@ Go 1.12
 3. No auto complete for search term.
 
 4. The app will ignore invalid command and only will response to valid command.
+
+5. https://appliedgo.net/generics/
 
 ## Setting up locally
 
@@ -62,19 +64,19 @@ $ make run
 ```
 
 ### Main Menu
-![Search menu](images/readme-menu.png)
+![Search menu](images/color-menu.png)
 
 ### Get Help
-![Help](images/readme-help.png)
+![Help](images/color-help.png)
 
 ### Display Search Field
-![Display search field](images/readme-field.png)
+![Display search field](images/color-field.png)
 
 ### Search and display in compact table
-![Display search result in compact table](images/readme-table.png)
+![Display search result in compact table](images/color-table.png)
 
 ### Search and display in json
-![Display search result in colored json](images/readme-json.png)
+![Display search result in colored json](images/color-json.png)
 
 ### Exit
-![Quit](images/readme-quit.png)
+![Quit](images/color-quit.png)
