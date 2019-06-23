@@ -27,6 +27,9 @@ func (output Table) Flush(data model.SearchResult) {
 	printer.DefaultAlignment = tableprinter.AlignCenter
 	printer.NumbersAlignment = tableprinter.AlignCenter
 	printer.RowCharLimit = 30
+	printer.RowLengthTitle = func(n int) bool {
+		return true
+	}
 
 	switch data.(type) {
 	case model.OrganizationSearchResult:
