@@ -11,7 +11,7 @@ import (
 var _ Records = (*Organizations)(nil)
 var _ SearchResult = (*OrganizationSearchResult)(nil)
 
-//Organizations will contain Organization data source
+//Organizations will contain records loaded from data source for organizations
 type Organizations struct {
 	BaseRecords
 	Items []schema.Organization
@@ -50,7 +50,7 @@ func (organizations *Organizations) Populate(jsonLoader loader.JSONLoader) error
 	return nil
 }
 
-//Search will allow data source to be searched
+//Search will be called to search data by search key and search field, business logic will be specific to Organizations
 func (organizations *Organizations) Search(searchKey string, searchTerm string) SearchResult {
 	results := OrganizationSearchResult{}
 	for _, organization := range organizations.Items {

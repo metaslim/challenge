@@ -11,7 +11,7 @@ import (
 var _ Records = (*Tickets)(nil)
 var _ SearchResult = (*TicketSearchResult)(nil)
 
-//Tickets will contains Ticket data source
+//Tickets will contain records loaded from data source for tickets
 type Tickets struct {
 	BaseRecords
 	Items []schema.Ticket
@@ -54,7 +54,7 @@ func (tickets *Tickets) Populate(jsonLoader loader.JSONLoader) error {
 	return nil
 }
 
-//Search will allow data source to be searched
+//Search will be called to search data by search key and search field, business logic will be specific to Tickets
 func (tickets *Tickets) Search(searchKey string, searchTerm string) SearchResult {
 	results := TicketSearchResult{}
 

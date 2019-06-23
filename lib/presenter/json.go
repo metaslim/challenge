@@ -8,9 +8,9 @@ import (
 	"github.com/tidwall/pretty"
 )
 
-var _ Output = (*Json)(nil)
+var _ Flushable = (*Json)(nil)
 
-//Json is a struct that will allow searh result to be outputted as JSON
+//Json is a struct that will output searh result as Color JSON
 type Json struct{}
 
 //Flush will output the data

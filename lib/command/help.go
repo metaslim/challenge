@@ -6,9 +6,9 @@ import (
 	"github.com/metaslim/challenge/lib/model"
 )
 
-var _ Action = (*Help)(nil)
+var _ Actionable = (*Help)(nil)
 
-//Help is action struct to return help message
+//Help will implement Actioanble, the action is showing help message
 type Help struct {
 	BaseCommand
 	name string

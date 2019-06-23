@@ -4,10 +4,21 @@ import (
 	"github.com/metaslim/challenge/lib/loader"
 )
 
+//Populatable is an interface that will give ability to be populated
+type Populatable interface {
+	Populate(loader.JSONLoader) error
+}
+
+//Searchable is an interface that will give ability to be searched
+type Searchable interface {
+	Search(string, string) SearchResult
+}
+
 //Records is an interface that will give ability to be searched and populated
 type Records interface {
-	Populate(loader.JSONLoader) error
-	Search(string, string) SearchResult
+	Populatable
+	Searchable
+	Countable
 }
 
 //BaseRecords is Records base struct that store number of records

@@ -17,6 +17,7 @@ func ReadInput(reader *bufio.Reader) string {
 	return input
 }
 
+//LoadConfiguration will load config file
 func LoadConfiguration() (config.Config, error) {
 	appConfig := config.Config{}
 
@@ -33,6 +34,7 @@ func LoadConfiguration() (config.Config, error) {
 	return appConfig, nil
 }
 
+//CaptureOutput will capture stdout
 func CaptureOutput(f func()) string {
 	rescueStdout := os.Stdout
 	r, w, _ := os.Pipe()

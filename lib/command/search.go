@@ -9,13 +9,13 @@ import (
 	"github.com/metaslim/challenge/lib/model"
 )
 
-var _ Action = (*Search)(nil)
+var _ Actionable = (*Search)(nil)
 
-//Search is action struct to give ability to search data
+//Search will implement Actioanble, the action is searching and displaying result in JSON
 type Search struct {
 	BaseCommand
 	regex     *regexp.Regexp
-	Presenter presenter.Output
+	Presenter presenter.Flushable
 }
 
 //Valid will control if the command will trigger Run

@@ -5,9 +5,9 @@ import (
 	"os"
 )
 
-var _ Loader = (*JSONLoader)(nil)
+var _ Loadable = (*JSONLoader)(nil)
 
-//JSONLoader is struct that will implement Loader interface
+//JSONLoader will implement Loadable interface and allow loading data from json file
 type JSONLoader struct {
 	FileName string
 }
@@ -23,7 +23,7 @@ func (jsonLoader JSONLoader) GetFileHandle() (*os.File, error) {
 	return fileHandle, nil
 }
 
-//Parse return valid parser engine
+//Parse return valid json parser engine
 func (jsonLoader JSONLoader) Parse() func([]byte, interface{}) error {
 	return json.Unmarshal
 }

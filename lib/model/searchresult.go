@@ -1,9 +1,19 @@
 package model
 
+//Countable is an interface that will allow object to be counted
+type Countable interface {
+	GetSize() int
+}
+
+//Decoratable is an interface that will allow object to be decorated
+type Decoratable interface {
+	Decorate(DataSet)
+}
+
 //SearchResult is an interface that will allow object to be decorated
 type SearchResult interface {
-	Decorate(DataSet)
-	GetSize() int
+	Decoratable
+	Countable
 }
 
 //BaseSearchResult is SearchResult base struct that store number of search result records

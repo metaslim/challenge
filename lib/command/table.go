@@ -9,13 +9,13 @@ import (
 	"github.com/metaslim/challenge/lib/model"
 )
 
-var _ Action = (*Table)(nil)
+var _ Actionable = (*Table)(nil)
 
-//Table is action struct to give ability to search data and display as table
+//Table will implement Actioanble, the action is searching and displaying result in Table
 type Table struct {
 	BaseCommand
 	regex     *regexp.Regexp
-	Presenter presenter.Output
+	Presenter presenter.Flushable
 }
 
 //Valid will control if the command will trigger Run

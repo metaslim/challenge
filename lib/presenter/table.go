@@ -8,9 +8,9 @@ import (
 	"github.com/metaslim/challenge/lib/model"
 )
 
-var _ Output = (*Json)(nil)
+var _ Flushable = (*Json)(nil)
 
-//Table is a struct that will allow searh result to be outputted as Table
+//Table is a struct that will output searh result as Table
 type Table struct{}
 
 //Flush will output the data

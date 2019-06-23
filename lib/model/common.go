@@ -6,7 +6,7 @@ import (
 	"github.com/metaslim/challenge/lib/loader"
 )
 
-//load is a method that will be called by populate
+//load is a shared method that will be called by populate this will return valid json model
 func load(jsonLoader loader.JSONLoader, model interface{}) error {
 	fileHandle, err := jsonLoader.GetFileHandle()
 	defer fileHandle.Close()

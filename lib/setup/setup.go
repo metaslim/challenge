@@ -125,8 +125,8 @@ func LoadDataSet(appConfig config.Config) (model.DataSet, error) {
 }
 
 //PrepareCommand is a helper method to set up all commands for user to be inputted
-func PrepareCommand() []command.Action {
-	commands := []command.Action{}
+func PrepareCommand() []command.Actionable {
+	commands := []command.Actionable{}
 
 	commands = append(commands, &command.Help{})
 	commands = append(commands, &command.Describe{})

@@ -5,7 +5,7 @@ type Config struct {
 	Data JsonFile
 }
 
-//JsonFile will hold json files inside [Data]
+//JsonFile will hold all json files inside [Data]
 type JsonFile struct {
 	Organization string
 	Ticket       string

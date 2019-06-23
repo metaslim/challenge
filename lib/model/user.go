@@ -11,7 +11,7 @@ import (
 var _ Records = (*Users)(nil)
 var _ SearchResult = (*UserSearchResult)(nil)
 
-//Users will contains User data source
+//Users will contain records loaded from data source for users
 type Users struct {
 	BaseRecords
 	Items []schema.User
@@ -55,7 +55,7 @@ func (users *Users) Populate(jsonLoader loader.JSONLoader) error {
 	return nil
 }
 
-//Search will allow data source to be searched
+//Search will be called to search data by search key and search field, business logic will be specific to Users
 func (users *Users) Search(searchKey string, searchTerm string) SearchResult {
 	results := UserSearchResult{}
 

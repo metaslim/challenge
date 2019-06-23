@@ -8,9 +8,9 @@ import (
 	"github.com/metaslim/challenge/lib/model"
 )
 
-var _ Action = (*Describe)(nil)
+var _ Actionable = (*Describe)(nil)
 
-//Search is action struct to give ability to search data
+//Describe will implement Actioanble, the action is listing searchable field
 type Describe struct {
 	BaseCommand
 	regex *regexp.Regexp
