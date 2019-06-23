@@ -64,19 +64,19 @@ $ make run
 ```
 
 ### Main Menu
-![Search menu](images/color-menu.png)
+![Search menu](images/readme/color-menu.png)
 
 ### Get Help
-![Help](images/color-help.png)
+![Help](images/readme/color-help.png)
 
 ### Display Search Field
-![Display search field](images/color-field.png)
+![Display search field](images/readme/color-field.png)
 
 ### Search and display in compact table
-![Display search result in compact table](images/color-table.png)
+![Display search result in compact table](images/readme/color-table.png)
 
 ### Search and display in json
-![Display search result in colored json](images/color-json.png)
+![Display search result in colored json](images/readme/color-json.png)
 
 ### Exit
-![Quit](images/color-quit.png)
+![Quit](images/readme/color-quit.png)
