@@ -69,31 +69,31 @@ func TestDescribeRun(t *testing.T) {
 		expected string
 	}{
 		{
-			desc: "return true for correct describe command",
+			desc: "return correct search field for organizations",
 			describe: Describe{
 				BaseCommand: BaseCommand{
 					Input: "describe-organizations",
 				},
 			},
-			expected: "organizations can be searched by any fields below",
+			expected: "ORGANIZATIONS can be searched by any fields below",
 		},
 		{
-			desc: "return false for incorrect describe command",
+			desc: "return correct search field for tickets",
+			describe: Describe{
+				BaseCommand: BaseCommand{
+					Input: "describe-tickets",
+				},
+			},
+			expected: "TICKETS can be searched by any fields below",
+		},
+		{
+			desc: "return correct search field for users",
 			describe: Describe{
 				BaseCommand: BaseCommand{
 					Input: "describe-users",
 				},
 			},
-			expected: "users can be searched by any fields below",
-		},
-		{
-			desc: "return false for incorrect describe command",
-			describe: Describe{
-				BaseCommand: BaseCommand{
-					Input: "describe-users",
-				},
-			},
-			expected: "users can be searched by any fields below",
+			expected: "USERS can be searched by any fields below",
 		},
 	}
 

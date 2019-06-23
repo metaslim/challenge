@@ -53,7 +53,7 @@ func TestHelpRun(t *testing.T) {
 		{
 			desc:     "return help message",
 			help:     Help{},
-			expected: "Sample commands",
+			expected: "will return",
 		},
 	}
 

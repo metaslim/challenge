@@ -59,5 +59,6 @@ func (action Table) Run(dataSet model.DataSet) {
 
 	result.Decorate(dataSet)
 
+	fmt.Printf("\n")
 	action.Presenter.Flush(result)
 }

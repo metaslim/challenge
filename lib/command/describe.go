@@ -4,8 +4,10 @@ import (
 	"fmt"
 	"reflect"
 	"regexp"
+	"strings"
 
 	"github.com/metaslim/challenge/lib/model"
+	"github.com/metaslim/challenge/lib/textcolor"
 )
 
 var _ Actionable = (*Describe)(nil)
@@ -48,16 +50,14 @@ func (action Describe) Run(dataSet model.DataSet) {
 
 	regex, _ := regexp.Compile(`^(?i)json:"(\w+)".*?search:"yes"$`)
 
-	fmt.Printf("\n%s can be searched by any fields below\n", describeEngine)
-	fmt.Println("================================================")
+	fmt.Printf("\n%s can be searched by any fields below\n\n", strings.ToUpper(describeEngine))
 	for i := 0; i < val.NumField(); i++ {
 		typeField := val.Type().Field(i)
 		tag := string(typeField.Tag)
 		matches := regex.FindStringSubmatch(tag)
 
 		if matches != nil {
-			fmt.Printf("\t%s\n", matches[1])
+			textcolor.Green("%s\n", matches[1])
 		}
 	}
-	fmt.Println("================================================")
 }

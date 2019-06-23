@@ -42,7 +42,9 @@
   branch="master"
 
 [[override]]
+  name = "github.com/fatih/color"
+  branch="master"
+
+[[override]]
   name = "github.com/landoop/tablewriter"
   branch="master"
-  
-  

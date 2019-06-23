@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/metaslim/challenge/lib/setup"
+	"github.com/metaslim/challenge/lib/textcolor"
 	"github.com/metaslim/challenge/lib/util"
 )
 
@@ -25,15 +26,15 @@ func main() {
 
 	commands := setup.PrepareCommand()
 
-	fmt.Println("==================================")
-	fmt.Println("\t`quit` to exit")
-	fmt.Println("\t`help` to get help")
-	fmt.Println("==================================")
-	fmt.Printf("<Command> ➜ ")
+	textcolor.Yellow("\n<Command> [help|quit] ➜ ")
 	reader := bufio.NewReader(os.Stdin)
 	input := util.ReadInput(reader)
 
 	for input != "quit" {
+		if input == "" {
+			input = "help"
+		}
+
 		for _, command := range commands {
 			command.SetInput(input)
 			if command.Valid() {
@@ -41,7 +42,7 @@ func main() {
 				break
 			}
 		}
-		fmt.Printf("<Command> ➜ ")
+		textcolor.Yellow("\n<Command> [help|quit] ➜ ")
 		input = util.ReadInput(reader)
 	}
 

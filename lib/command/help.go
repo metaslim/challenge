@@ -3,7 +3,9 @@ package command
 import (
 	"fmt"
 
+	"github.com/fatih/color"
 	"github.com/metaslim/challenge/lib/model"
+	"github.com/metaslim/challenge/lib/textcolor"
 )
 
 var _ Actionable = (*Help)(nil)
@@ -25,19 +27,27 @@ func (action Help) Valid() bool {
 
 //Run will be executed for help command
 func (action Help) Run(dataSet model.DataSet) {
-	fmt.Println("\n===================================================================================================================")
-	fmt.Println("Sample commands")
-	fmt.Println("describe")
-	fmt.Println("\t`describe-organizations` will return search fields for organizations")
-	fmt.Println("\t`describe-users` will return search fields for users")
-	fmt.Println("\t`describe-tickets` will return search fields for tickets")
-	fmt.Println("table")
-	fmt.Println("\t`table-organizations:tags=West` will return any organizations who has West in their Tags in compact table")
-	fmt.Println("\t`table-users:alias=Miss Coffey` will return any users whose alias is Miss Coffey in compact table")
-	fmt.Println("\t`table-tickets:status=pending` will return any tickets with pending status in compact table")
-	fmt.Println("search")
-	fmt.Println("\t`search-organizations:tags=West` will return any organizations who has West in their Tags")
-	fmt.Println("\t`search-users:alias=Miss Coffey` will return any users whose alias is Miss Coffey")
-	fmt.Println("\t`search-tickets:status=pending` will return any tickets with pending status")
-	fmt.Println("===================================================================================================================")
+	color.HiGreen("\ndescribe")
+	textcolor.Green("\tdescribe-organizations")
+	fmt.Println("\t\twill return search fields for organizations")
+	textcolor.Green("\tdescribe-users")
+	fmt.Println("\t\t\twill return search fields for users")
+	textcolor.Green("\tdescribe-tickets")
+	fmt.Println("\t\twill return search fields for tickets")
+
+	color.HiMagenta("table")
+	textcolor.Magenta("\ttable-organizations:tags=West")
+	fmt.Println("\twill return any organizations who has West in their Tags in compact table")
+	textcolor.Magenta("\ttable-users:alias=Miss Coffey")
+	fmt.Println("\twill return any users whose alias is Miss Coffey in compact table")
+	textcolor.Magenta("\ttable-tickets:status=pending")
+	fmt.Println("\twill return any tickets with pending status in compact table")
+
+	color.HiCyan("search")
+	textcolor.Cyan("\tsearch-organizations:tags=West")
+	fmt.Println("\twill return any organizations who has West in their Tags in JSON")
+	textcolor.Cyan("\tsearch-users:alias=Miss Coffey")
+	fmt.Println("\twill return any users whose alias is Miss Coffey in JSON")
+	textcolor.Cyan("\tsearch-tickets:status=pending")
+	fmt.Println("\twill return any tickets with pending status in JSON")
 }
