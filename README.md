@@ -14,7 +14,7 @@ Go 1.12
 
 3. No auto complete for search term.
 
-4. The app will ignore invalid command and only will response to valid command.
+4. The app will ignore invalid commands and will only respond to a valid command.
 
 5. https://appliedgo.net/generics/
 
@@ -69,13 +69,13 @@ $ make run
 ### Get Help
 ![Help](images/readme/color-help.png)
 
-### Display Search Field
+### Display Search Fields
 ![Display search field](images/readme/color-field.png)
 
-### Search and display in compact table
+### Search and display result in compact table
 ![Display search result in compact table](images/readme/color-table.png)
 
-### Search and display in json
+### Search and display result in colored json
 ![Display search result in colored json](images/readme/color-json.png)
 
 ### Exit
