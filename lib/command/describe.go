@@ -50,7 +50,7 @@ func (action Describe) Run(dataSet model.DataSet) {
 
 	regex, _ := regexp.Compile(`^(?i)json:"(\w+)".*?search:"yes"$`)
 
-	textcolor.Green(os.Stdout, "\n%s can be searched by any fields below\n\n", strings.ToUpper(describeEngine))
+	textcolor.HiBlue(os.Stdout, "\n%s can be searched by any fields below\n\n", strings.ToUpper(describeEngine))
 
 	for i := 0; i < val.NumField(); i++ {
 		typeField := val.Type().Field(i)

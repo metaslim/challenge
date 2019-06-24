@@ -26,7 +26,7 @@ func (output Table) Flush(data model.SearchResult) {
 	printer.HeaderAlignment = tableprinter.AlignCenter
 	printer.DefaultAlignment = tableprinter.AlignCenter
 	printer.NumbersAlignment = tableprinter.AlignCenter
-	printer.RowCharLimit = 30
+	printer.RowCharLimit = 25
 	printer.RowLengthTitle = func(n int) bool {
 		return true
 	}
