@@ -26,7 +26,7 @@ func main() {
 
 	commands := setup.PrepareCommand()
 
-	textcolor.Yellow("\n<Command> [help|quit] ➜ ")
+	textcolor.HiYellow(os.Stdout, "\n<Command> [help|quit] ➜ ")
 	reader := bufio.NewReader(os.Stdin)
 	input := util.ReadInput(reader)
 
@@ -42,9 +42,9 @@ func main() {
 				break
 			}
 		}
-		textcolor.Yellow("\n<Command> [help|quit] ➜ ")
+		textcolor.HiYellow(os.Stdout, "\n<Command> [help|quit] ➜ ")
 		input = util.ReadInput(reader)
 	}
 
-	fmt.Println("Bye and have a nice day ahead!")
+	textcolor.HiRed(os.Stdout, "Bye and have a nice day ahead\n")
 }

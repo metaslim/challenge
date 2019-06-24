@@ -1,7 +1,7 @@
 package command
 
 import (
-	"fmt"
+	"os"
 	"reflect"
 	"regexp"
 	"strings"
@@ -50,14 +50,15 @@ func (action Describe) Run(dataSet model.DataSet) {
 
 	regex, _ := regexp.Compile(`^(?i)json:"(\w+)".*?search:"yes"$`)
 
-	fmt.Printf("\n%s can be searched by any fields below\n\n", strings.ToUpper(describeEngine))
+	textcolor.Green(os.Stdout, "\n%s can be searched by any fields below\n\n", strings.ToUpper(describeEngine))
+
 	for i := 0; i < val.NumField(); i++ {
 		typeField := val.Type().Field(i)
 		tag := string(typeField.Tag)
 		matches := regex.FindStringSubmatch(tag)
 
 		if matches != nil {
-			textcolor.Green("%s\n", matches[1])
+			textcolor.HiGreen(os.Stdout, "%s\n", matches[1])
 		}
 	}
 }

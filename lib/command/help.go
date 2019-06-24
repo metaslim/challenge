@@ -2,6 +2,7 @@ package command
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/fatih/color"
 	"github.com/metaslim/challenge/lib/model"
@@ -27,27 +28,27 @@ func (action Help) Valid() bool {
 
 //Run will be executed for help command
 func (action Help) Run(dataSet model.DataSet) {
-	color.HiGreen("\ndescribe")
-	textcolor.Green("\tdescribe-organizations")
+	color.Green("\ndescribe")
+	textcolor.HiGreen(os.Stdout, "\tdescribe-organizations")
 	fmt.Println("\t\twill return search fields for organizations")
-	textcolor.Green("\tdescribe-users")
+	textcolor.HiGreen(os.Stdout, "\tdescribe-users")
 	fmt.Println("\t\t\twill return search fields for users")
-	textcolor.Green("\tdescribe-tickets")
+	textcolor.HiGreen(os.Stdout, "\tdescribe-tickets")
 	fmt.Println("\t\twill return search fields for tickets")
 
-	color.HiMagenta("table")
-	textcolor.Magenta("\ttable-organizations:tags=West")
+	color.Magenta("table")
+	textcolor.HiMagenta(os.Stdout, "\ttable-organizations:tags=West")
 	fmt.Println("\twill return any organizations who has West in their Tags in compact table")
-	textcolor.Magenta("\ttable-users:alias=Miss Coffey")
+	textcolor.HiMagenta(os.Stdout, "\ttable-users:alias=Miss Coffey")
 	fmt.Println("\twill return any users whose alias is Miss Coffey in compact table")
-	textcolor.Magenta("\ttable-tickets:status=pending")
+	textcolor.HiMagenta(os.Stdout, "\ttable-tickets:status=pending")
 	fmt.Println("\twill return any tickets with pending status in compact table")
 
-	color.HiCyan("search")
-	textcolor.Cyan("\tsearch-organizations:tags=West")
+	color.Cyan("search")
+	textcolor.HiCyan(os.Stdout, "\tsearch-organizations:tags=West")
 	fmt.Println("\twill return any organizations who has West in their Tags in JSON")
-	textcolor.Cyan("\tsearch-users:alias=Miss Coffey")
+	textcolor.HiCyan(os.Stdout, "\tsearch-users:alias=Miss Coffey")
 	fmt.Println("\twill return any users whose alias is Miss Coffey in JSON")
-	textcolor.Cyan("\tsearch-tickets:status=pending")
+	textcolor.HiCyan(os.Stdout, "\tsearch-tickets:status=pending")
 	fmt.Println("\twill return any tickets with pending status in JSON")
 }
