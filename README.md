@@ -10,7 +10,7 @@ Go 1.12
 
 1. List of searchable fields is extracted from the first record in each json files.
 
-2. Search term must be exact match, which means it will only accept time format as defined in json (2016-06-07T09:18:00 -10:00)
+2. Search term must be exact match, which means it will only accept time format as defined in json (2016-06-07T09:18:00 -10:00).
 
 3. No auto complete for search term.
 
@@ -72,7 +72,7 @@ $ make run
 ### Display Search Fields
 ![Display search field](images/readme/color-field.png)
 
-### Search and display result in compact table
+### Search and display result in compact table (less field)
 ![Display search result in compact table](images/readme/color-table.png)
 
 ### Search and display result in colored json
