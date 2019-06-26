@@ -1,7 +1,7 @@
 [
   {
     "_id": "436bf9b0-1147-4c0a-8439-6f79833bff5b",
-    "url": "http://initech.metaslim.com/api/v2/tickets/436bf9b0-1147-4c0a-8439-6f79833bff5b.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/436bf9b0-1147-4c0a-8439-6f79833bff5b.json",
     "external_id": "9210cdc9-4bee-485f-a078-35396cd74063",
     "created_at": "2016-04-28T11:19:34 -10:00",
     "type": "incident",
@@ -24,7 +24,7 @@
   },
   {
     "_id": "1a227508-9f39-427c-8f57-1b72f3fab87c",
-    "url": "http://initech.metaslim.com/api/v2/tickets/1a227508-9f39-427c-8f57-1b72f3fab87c.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/1a227508-9f39-427c-8f57-1b72f3fab87c.json",
     "external_id": "3e5ca820-cd1f-4a02-a18f-11b18e7bb49a",
     "created_at": "2016-04-14T08:32:31 -10:00",
     "type": "incident",
@@ -47,7 +47,7 @@
   },
   {
     "_id": "2217c7dc-7371-4401-8738-0a8a8aedc08d",
-    "url": "http://initech.metaslim.com/api/v2/tickets/2217c7dc-7371-4401-8738-0a8a8aedc08d.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/2217c7dc-7371-4401-8738-0a8a8aedc08d.json",
     "external_id": "3db2c1e6-559d-4015-b7a4-6248464a6bf0",
     "created_at": "2016-07-16T12:05:12 -10:00",
     "type": "problem",
@@ -70,7 +70,7 @@
   },
   {
     "_id": "87db32c5-76a3-4069-954c-7d59c6c21de0",
-    "url": "http://initech.metaslim.com/api/v2/tickets/87db32c5-76a3-4069-954c-7d59c6c21de0.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/87db32c5-76a3-4069-954c-7d59c6c21de0.json",
     "external_id": "1c61056c-a5ad-478a-9fd6-38889c3cd728",
     "created_at": "2016-07-06T11:16:50 -10:00",
     "type": "problem",
@@ -93,7 +93,7 @@
   },
   {
     "_id": "4cce7415-ef12-42b6-b7b5-fb00e24f9cc1",
-    "url": "http://initech.metaslim.com/api/v2/tickets/4cce7415-ef12-42b6-b7b5-fb00e24f9cc1.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/4cce7415-ef12-42b6-b7b5-fb00e24f9cc1.json",
     "external_id": "ef665694-aa3f-4960-b264-0e77c50486cf",
     "created_at": "2016-02-25T09:12:47 -11:00",
     "type": "question",
@@ -115,7 +115,7 @@
   },
   {
     "_id": "95870a6c-22bd-45c3-8d8e-b7f2c7d46b76",
-    "url": "http://initech.metaslim.com/api/v2/tickets/95870a6c-22bd-45c3-8d8e-b7f2c7d46b76.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/95870a6c-22bd-45c3-8d8e-b7f2c7d46b76.json",
     "external_id": "4a70394c-9b1a-4766-9d41-ef7f61a01a1c",
     "created_at": "2016-06-26T12:12:53 -10:00",
     "type": "question",
@@ -138,7 +138,7 @@
   },
   {
     "_id": "81bdd837-e955-4aa4-a971-ef1e3b373c6d",
-    "url": "http://initech.metaslim.com/api/v2/tickets/81bdd837-e955-4aa4-a971-ef1e3b373c6d.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/81bdd837-e955-4aa4-a971-ef1e3b373c6d.json",
     "external_id": "dbf801cc-2d9e-403e-9210-4c870240d270",
     "created_at": "2016-01-13T05:42:04 -11:00",
     "type": "problem",
@@ -160,7 +160,7 @@
   },
   {
     "_id": "5aa53572-b31c-4d27-814b-11709ab00259",
-    "url": "http://initech.metaslim.com/api/v2/tickets/5aa53572-b31c-4d27-814b-11709ab00259.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/5aa53572-b31c-4d27-814b-11709ab00259.json",
     "external_id": "c38e866e-0b2e-4207-a7da-bc4c2cb5eb8f",
     "created_at": "2016-02-11T04:46:29 -11:00",
     "type": "question",
@@ -183,7 +183,7 @@
   },
   {
     "_id": "674a19a1-c330-45fb-8b61-b4d77ba87130",
-    "url": "http://initech.metaslim.com/api/v2/tickets/674a19a1-c330-45fb-8b61-b4d77ba87130.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/674a19a1-c330-45fb-8b61-b4d77ba87130.json",
     "external_id": "050ea8ce-251c-44c8-b71c-535dd9072a74",
     "created_at": "2016-03-07T08:24:53 -11:00",
     "type": "task",
@@ -206,7 +206,7 @@
   },
   {
     "_id": "c73a0be5-e967-4948-b0a4-eff98d1a43ad",
-    "url": "http://initech.metaslim.com/api/v2/tickets/c73a0be5-e967-4948-b0a4-eff98d1a43ad.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/c73a0be5-e967-4948-b0a4-eff98d1a43ad.json",
     "external_id": "97e1ea8e-356c-48ea-9ad6-dc4c9f1843da",
     "created_at": "2016-06-12T09:32:30 -10:00",
     "type": "problem",
@@ -229,7 +229,7 @@
   },
   {
     "_id": "b4875dbc-c167-4625-a1e4-d14ed409c62c",
-    "url": "http://initech.metaslim.com/api/v2/tickets/b4875dbc-c167-4625-a1e4-d14ed409c62c.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/b4875dbc-c167-4625-a1e4-d14ed409c62c.json",
     "external_id": "0a8d9bab-b265-4801-8d64-ba6cba3df967",
     "created_at": "2016-04-22T12:55:29 -10:00",
     "type": "question",
@@ -252,7 +252,7 @@
   },
   {
     "_id": "c08537d2-116d-45ff-a6d0-60c1a7d4778f",
-    "url": "http://initech.metaslim.com/api/v2/tickets/c08537d2-116d-45ff-a6d0-60c1a7d4778f.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/c08537d2-116d-45ff-a6d0-60c1a7d4778f.json",
     "external_id": "0f534118-467e-438f-9cfd-fad0fe4a0b1e",
     "created_at": "2016-05-15T01:23:37 -10:00",
     "type": "task",
@@ -275,7 +275,7 @@
   },
   {
     "_id": "9a21f37a-8ac5-4ef1-8b99-f1d4ca9cf170",
-    "url": "http://initech.metaslim.com/api/v2/tickets/9a21f37a-8ac5-4ef1-8b99-f1d4ca9cf170.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/9a21f37a-8ac5-4ef1-8b99-f1d4ca9cf170.json",
     "external_id": "09c3cefd-2149-4491-9993-d6b84fc7fbf4",
     "created_at": "2016-02-05T10:36:14 -11:00",
     "type": "task",
@@ -298,7 +298,7 @@
   },
   {
     "_id": "35d6bb75-10fd-4ce8-8688-dde2882b623f",
-    "url": "http://initech.metaslim.com/api/v2/tickets/35d6bb75-10fd-4ce8-8688-dde2882b623f.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/35d6bb75-10fd-4ce8-8688-dde2882b623f.json",
     "external_id": "f2d820b9-a741-4c38-a5e4-f7221a351c74",
     "created_at": "2016-02-02T12:58:47 -11:00",
     "type": "question",
@@ -321,7 +321,7 @@
   },
   {
     "_id": "6aac0369-a7e5-4417-8b50-92528ef485d3",
-    "url": "http://initech.metaslim.com/api/v2/tickets/6aac0369-a7e5-4417-8b50-92528ef485d3.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/6aac0369-a7e5-4417-8b50-92528ef485d3.json",
     "external_id": "0c2ba6c6-ea9a-4a58-ada4-bc72f3b9ff39",
     "created_at": "2016-06-15T12:03:55 -10:00",
     "type": "question",
@@ -344,7 +344,7 @@
   },
   {
     "_id": "4e85e18c-797a-4d28-8e92-750447d3b4f5",
-    "url": "http://initech.metaslim.com/api/v2/tickets/4e85e18c-797a-4d28-8e92-750447d3b4f5.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/4e85e18c-797a-4d28-8e92-750447d3b4f5.json",
     "external_id": "4ef45a7a-81ce-422f-bc38-59a79baa5591",
     "created_at": "2016-02-04T07:50:34 -11:00",
     "type": "task",
@@ -367,7 +367,7 @@
   },
   {
     "_id": "ded8a85b-3d18-4b21-ad77-e7ded3d09dcf",
-    "url": "http://initech.metaslim.com/api/v2/tickets/ded8a85b-3d18-4b21-ad77-e7ded3d09dcf.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/ded8a85b-3d18-4b21-ad77-e7ded3d09dcf.json",
     "external_id": "4ec22934-4aa7-454c-8162-fa578c7211d9",
     "created_at": "2016-04-23T11:14:42 -10:00",
     "type": "question",
@@ -390,7 +390,7 @@
   },
   {
     "_id": "fc5a8a70-3814-4b17-a6e9-583936fca909",
-    "url": "http://initech.metaslim.com/api/v2/tickets/fc5a8a70-3814-4b17-a6e9-583936fca909.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/fc5a8a70-3814-4b17-a6e9-583936fca909.json",
     "external_id": "e8cab26b-f3b9-4016-875c-b0d9a258761b",
     "created_at": "2016-07-08T07:57:15 -10:00",
     "type": "problem",
@@ -412,7 +412,7 @@
   },
   {
     "_id": "b539a7db-1166-4537-9a5e-d2a97dd432bd",
-    "url": "http://initech.metaslim.com/api/v2/tickets/b539a7db-1166-4537-9a5e-d2a97dd432bd.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/b539a7db-1166-4537-9a5e-d2a97dd432bd.json",
     "external_id": "5150a02f-0aca-4db3-a1f7-91998df71794",
     "created_at": "2016-01-16T09:56:03 -11:00",
     "type": "task",
@@ -435,7 +435,7 @@
   },
   {
     "_id": "25c518a8-4bd9-435a-9442-db4202ec1da4",
-    "url": "http://initech.metaslim.com/api/v2/tickets/25c518a8-4bd9-435a-9442-db4202ec1da4.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/25c518a8-4bd9-435a-9442-db4202ec1da4.json",
     "external_id": "ff8be0f9-8b86-406e-a110-9ba1ca839850",
     "created_at": "2016-01-11T08:56:20 -11:00",
     "type": "problem",
@@ -458,7 +458,7 @@
   },
   {
     "_id": "d0f5ea36-a319-4c6d-a831-32b9a2b4a010",
-    "url": "http://initech.metaslim.com/api/v2/tickets/d0f5ea36-a319-4c6d-a831-32b9a2b4a010.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/d0f5ea36-a319-4c6d-a831-32b9a2b4a010.json",
     "external_id": "c5310224-d290-477e-9f49-2f8346fd568f",
     "created_at": "2016-03-13T03:32:53 -11:00",
     "type": "problem",
@@ -481,7 +481,7 @@
   },
   {
     "_id": "9cbbadfe-7242-4d5a-af78-62aa7191d944",
-    "url": "http://initech.metaslim.com/api/v2/tickets/9cbbadfe-7242-4d5a-af78-62aa7191d944.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/9cbbadfe-7242-4d5a-af78-62aa7191d944.json",
     "external_id": "d193deb7-92d5-4004-a532-4a1cd30449c5",
     "created_at": "2016-01-30T12:45:37 -11:00",
     "type": "task",
@@ -504,7 +504,7 @@
   },
   {
     "_id": "3584e2c9-ccd4-4acb-9419-9245891cf398",
-    "url": "http://initech.metaslim.com/api/v2/tickets/3584e2c9-ccd4-4acb-9419-9245891cf398.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/3584e2c9-ccd4-4acb-9419-9245891cf398.json",
     "external_id": "f68df05d-8497-41ae-8b0e-237b759f0577",
     "created_at": "2016-04-18T11:55:49 -10:00",
     "type": "question",
@@ -527,7 +527,7 @@
   },
   {
     "_id": "5507c3f7-27fe-48f1-b01e-46d31715cc62",
-    "url": "http://initech.metaslim.com/api/v2/tickets/5507c3f7-27fe-48f1-b01e-46d31715cc62.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/5507c3f7-27fe-48f1-b01e-46d31715cc62.json",
     "external_id": "84c43214-2b6b-4631-a4bb-64af712e920b",
     "created_at": "2016-01-22T02:20:40 -11:00",
     "type": "question",
@@ -549,7 +549,7 @@
   },
   {
     "_id": "6f2eca87-8425-40f5-b12c-6745039d12f6",
-    "url": "http://initech.metaslim.com/api/v2/tickets/6f2eca87-8425-40f5-b12c-6745039d12f6.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/6f2eca87-8425-40f5-b12c-6745039d12f6.json",
     "external_id": "ca106ab2-84af-45e7-a101-2d5c63eebf85",
     "created_at": "2016-01-15T04:28:01 -11:00",
     "type": "question",
@@ -572,7 +572,7 @@
   },
   {
     "_id": "e68d8bfd-9826-42fd-9692-add445aa7430",
-    "url": "http://initech.metaslim.com/api/v2/tickets/e68d8bfd-9826-42fd-9692-add445aa7430.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/e68d8bfd-9826-42fd-9692-add445aa7430.json",
     "external_id": "82c58b0f-9958-4af6-b17c-5c23185ef0f9",
     "created_at": "2016-06-30T06:59:04 -10:00",
     "type": "question",
@@ -593,7 +593,7 @@
   },
   {
     "_id": "be0f613a-e7f7-4833-9342-643b0d9b9fca",
-    "url": "http://initech.metaslim.com/api/v2/tickets/be0f613a-e7f7-4833-9342-643b0d9b9fca.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/be0f613a-e7f7-4833-9342-643b0d9b9fca.json",
     "external_id": "bd668495-dfd1-4d47-a68d-364d5176753a",
     "created_at": "2016-03-13T10:19:40 -11:00",
     "type": "problem",
@@ -616,7 +616,7 @@
   },
   {
     "_id": "f3cc4dc6-3517-474b-b212-b82fdaa0800d",
-    "url": "http://initech.metaslim.com/api/v2/tickets/f3cc4dc6-3517-474b-b212-b82fdaa0800d.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/f3cc4dc6-3517-474b-b212-b82fdaa0800d.json",
     "external_id": "ac0adb5d-f270-456d-87a3-8e5fa7c6f34f",
     "created_at": "2016-02-04T04:52:04 -11:00",
     "type": "task",
@@ -639,7 +639,7 @@
   },
   {
     "_id": "3d0d0ce2-6d1b-4f8d-a743-3863aeb29aab",
-    "url": "http://initech.metaslim.com/api/v2/tickets/3d0d0ce2-6d1b-4f8d-a743-3863aeb29aab.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/3d0d0ce2-6d1b-4f8d-a743-3863aeb29aab.json",
     "external_id": "a6793810-40a3-486c-a002-bd43b384c759",
     "created_at": "2016-06-07T12:05:31 -10:00",
     "type": "task",
@@ -662,7 +662,7 @@
   },
   {
     "_id": "b07a8c20-2ee5-493b-9ebf-f6321b95966e",
-    "url": "http://initech.metaslim.com/api/v2/tickets/b07a8c20-2ee5-493b-9ebf-f6321b95966e.json",
+    "url": "http://initech.zendesk.com/api/v2/tickets/b07a8c20-2ee5-493b-9ebf-f6321b95966e.json",
     "external_id": "ca4452fc-b24d-4e06-a752-b15ee3fc42bb",
     "created_at": "2016-03-21T11:18:13 -11:00",
     "type": "question",

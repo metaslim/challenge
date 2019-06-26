@@ -1,7 +1,7 @@
 [
   {
     "_id": 1,
-    "url": "http://initech.metaslim.com/api/v2/users/1.json",
+    "url": "http://initech.zendesk.com/api/v2/users/1.json",
     "external_id": "74341f74-9c79-49d5-9611-87ef9b6eb75f",
     "name": "Francisca Rasmussen",
     "alias": "Miss Coffey",
@@ -27,7 +27,7 @@
   },
   {
     "_id": 2,
-    "url": "http://initech.metaslim.com/api/v2/users/2.json",
+    "url": "http://initech.zendesk.com/api/v2/users/2.json",
     "external_id": "c9995ea4-ff72-46e0-ab77-dfe0ae1ef6c2",
     "name": "Cross Barlow",
     "alias": "Miss Joni",
@@ -53,7 +53,7 @@
   },
   {
     "_id": 3,
-    "url": "http://initech.metaslim.com/api/v2/users/3.json",
+    "url": "http://initech.zendesk.com/api/v2/users/3.json",
     "external_id": "85c599c1-ebab-474d-a4e6-32f1c06e8730",
     "name": "Ingrid Wagner",
     "alias": "Miss Buck",
@@ -79,7 +79,7 @@
   },
   {
     "_id": 4,
-    "url": "http://initech.metaslim.com/api/v2/users/4.json",
+    "url": "http://initech.zendesk.com/api/v2/users/4.json",
     "external_id": "37c9aef5-cf01-4b07-af24-c6c49ac1d1c7",
     "name": "Rose Newton",
     "alias": "Mr Cardenas",
@@ -105,7 +105,7 @@
   },
   {
     "_id": 5,
-    "url": "http://initech.metaslim.com/api/v2/users/5.json",
+    "url": "http://initech.zendesk.com/api/v2/users/5.json",
     "external_id": "29c18801-fb42-433d-8674-f37d63e637df",
     "name": "Loraine Pittman",
     "alias": "Mr Ola",
@@ -131,7 +131,7 @@
   },
   {
     "_id": 6,
-    "url": "http://initech.metaslim.com/api/v2/users/6.json",
+    "url": "http://initech.zendesk.com/api/v2/users/6.json",
     "external_id": "ed106e63-396d-4d16-ae49-d3dd37049ba3",
     "name": "Riggs Hebert",
     "alias": "Miss Shelton",
@@ -157,7 +157,7 @@
   },
   {
     "_id": 7,
-    "url": "http://initech.metaslim.com/api/v2/users/7.json",
+    "url": "http://initech.zendesk.com/api/v2/users/7.json",
     "external_id": "bce94e82-b4f4-438f-bc0b-2440e8265705",
     "name": "Lou Schmidt",
     "alias": "Miss Shannon",
@@ -183,7 +183,7 @@
   },
   {
     "_id": 8,
-    "url": "http://initech.metaslim.com/api/v2/users/8.json",
+    "url": "http://initech.zendesk.com/api/v2/users/8.json",
     "external_id": "fa13ffa4-0ba1-41d1-be4a-c1e7a92f25e4",
     "name": "Lolita Herring",
     "alias": "Miss Reyna",
@@ -209,7 +209,7 @@
   },
   {
     "_id": 9,
-    "url": "http://initech.metaslim.com/api/v2/users/9.json",
+    "url": "http://initech.zendesk.com/api/v2/users/9.json",
     "external_id": "215e9cb6-cd30-444d-95f3-4c172d68859d",
     "name": "Josefa Mcfadden",
     "alias": "Mr Casey",
@@ -235,7 +235,7 @@
   },
   {
     "_id": 10,
-    "url": "http://initech.metaslim.com/api/v2/users/10.json",
+    "url": "http://initech.zendesk.com/api/v2/users/10.json",
     "external_id": "f744706e-df3d-4d51-ad18-c63e41be5cc0",
     "name": "Kari Vinson",
     "alias": "Mr Webb",
@@ -261,7 +261,7 @@
   },
   {
     "_id": 11,
-    "url": "http://initech.metaslim.com/api/v2/users/11.json",
+    "url": "http://initech.zendesk.com/api/v2/users/11.json",
     "external_id": "f844d39b-1d2c-4908-8719-48b5930bc6a2",
     "name": "Shelly Clements",
     "alias": "Miss Campos",
@@ -286,7 +286,7 @@
   },
   {
     "_id": 12,
-    "url": "http://initech.metaslim.com/api/v2/users/12.json",
+    "url": "http://initech.zendesk.com/api/v2/users/12.json",
     "external_id": "38899b1e-89ca-43e7-b039-e3c88525f0d2",
     "name": "Watkins Hammond",
     "alias": "Mr Sally",
@@ -312,7 +312,7 @@
   },
   {
     "_id": 13,
-    "url": "http://initech.metaslim.com/api/v2/users/13.json",
+    "url": "http://initech.zendesk.com/api/v2/users/13.json",
     "external_id": "dce36d80-f143-4b1e-8a2e-47651e367a4e",
     "name": "Wade Moore",
     "alias": "Mr Vera",
@@ -338,7 +338,7 @@
   },
   {
     "_id": 14,
-    "url": "http://initech.metaslim.com/api/v2/users/14.json",
+    "url": "http://initech.zendesk.com/api/v2/users/14.json",
     "external_id": "feacbd09-4aed-4c45-b9e0-af3898277cb3",
     "name": "Shepherd Joseph",
     "alias": "Miss Martina",
@@ -364,7 +364,7 @@
   },
   {
     "_id": 15,
-    "url": "http://initech.metaslim.com/api/v2/users/15.json",
+    "url": "http://initech.zendesk.com/api/v2/users/15.json",
     "external_id": "6060c1b0-f523-4ce4-a993-0ae7a1e9b2cd",
     "name": "Jeri Estrada",
     "alias": "Miss Byers",
@@ -390,7 +390,7 @@
   },
   {
     "_id": 16,
-    "url": "http://initech.metaslim.com/api/v2/users/16.json",
+    "url": "http://initech.zendesk.com/api/v2/users/16.json",
     "external_id": "08b3023c-c5c6-4acf-8256-8d091687505e",
     "name": "Woodard Burt",
     "alias": "Miss Michael",
@@ -415,7 +415,7 @@
   },
   {
     "_id": 17,
-    "url": "http://initech.metaslim.com/api/v2/users/17.json",
+    "url": "http://initech.zendesk.com/api/v2/users/17.json",
     "external_id": "d450d3dd-ef44-40a3-8c1b-dd8dcbad26d1",
     "name": "Tyler Bates",
     "alias": "Miss Myra",
@@ -440,7 +440,7 @@
   },
   {
     "_id": 18,
-    "url": "http://initech.metaslim.com/api/v2/users/18.json",
+    "url": "http://initech.zendesk.com/api/v2/users/18.json",
     "external_id": "2771c7b7-4020-4103-8a8b-e5f386b912c5",
     "name": "Adriana Ryan",
     "alias": "Miss Marissa",
@@ -466,7 +466,7 @@
   },
   {
     "_id": 19,
-    "url": "http://initech.metaslim.com/api/v2/users/19.json",
+    "url": "http://initech.zendesk.com/api/v2/users/19.json",
     "external_id": "68e35e26-7b1f-46ec-a9e5-3edcbcf2aeb9",
     "name": "Francis Rodrigüez",
     "alias": "Mr Lea",
@@ -491,7 +491,7 @@
   },
   {
     "_id": 20,
-    "url": "http://initech.metaslim.com/api/v2/users/20.json",
+    "url": "http://initech.zendesk.com/api/v2/users/20.json",
     "external_id": "1c8b9696-b5c5-4f5a-b077-5d85dd8b22f4",
     "name": "Lee Davidson",
     "alias": "Miss Hayes",
